@@ -1,0 +1,309 @@
+/* Globals */
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+  block-size: 100vh;
+
+  font-family: var(--main-ff);
+  color: var(--main-color);
+
+	position: relative;
+	
+	background: #DCDCDC;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--headers-ff);
+  color: var(--main-color);
+}
+  
+h2 {
+  font-size: var(--h2-font-size);
+  line-height: var(--h2-line-height);
+  text-transform: uppercase;
+	font-weight: 300;
+
+	position: relative;
+}
+
+h2:not(.backform__title)::before {
+	content: '';
+
+	inline-size: 150px;
+	block-size: 2px;
+
+	position: absolute;
+	top: -30px;
+
+	display: inline-block;
+
+	background: url('../svg/mainSvgs/blue-stick.svg')
+}
+  
+h3 {
+  font-size: var(--h3-font-size);
+  line-height: var(--h3-line-height);
+}
+
+p {
+	color: var(--silent-color)
+}
+
+.svg {
+  block-size: 25px;
+  inline-size: 25px;
+}
+  
+.blackout {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  
+  opacity: 0.5;
+  background: #000;
+}
+  
+.button {
+  padding: 34px 50px;
+  
+  font-family: inherit;
+  color: #fff;
+  font-weight: 400;
+  font-size: var(--par-font-size);
+  line-height: var(--par-line-height);
+  
+  cursor: pointer;
+  border: none;
+  background: var(--supporting-color);
+
+  transition: transform 0.3s ease;
+}
+  
+.button:hover:not(.header__consultation-button) {
+	transform: scale(1.1);
+}
+  
+.backform {
+	padding: 50px;
+
+  inline-size: 50vw;
+	max-block-size: 95vh;
+  
+  position: fixed;
+	top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+      
+  display: none;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 25px;
+  
+  border-radius: 25px;
+  background-color: #fff;
+	box-shadow: 0 0 10px 5px grey;
+  
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+  
+.form__success {
+  inline-size: 75px;
+  block-size: 75px;
+  
+  display: none;
+  
+  position: fixed;
+  z-index: 11;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.backform__blackout {
+	position: fixed;
+
+	z-index: -1;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+.backform__title {
+	margin-block-end: clamp(0.8rem, 0.4733rem + 0.6472vw, 1.25rem);
+}
+
+.backform-header-container {
+	display: flex;
+	word-wrap: break-word;
+}
+
+.backform-container span {
+	font-size: clamp(1rem, 0.9393rem + 0.2589vw, 1.25rem);
+}
+
+.backform-radio-label {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+
+	font-size: clamp(0.75rem, 0.6893rem + 0.2589vw, 1rem);
+
+	cursor: pointer;
+
+	transition: all 0.25s ease;
+}
+
+.backform-radio-label:hover {
+	transform: scale(1.025);
+}
+
+.backform-radio-label span {
+	inline-size: 16px;
+	block-size: 16px;
+
+	position: relative;
+
+	display: inline-block;
+
+	border: 1px solid #000;
+	border-radius: 50%;
+}
+
+.backform-radio[type="radio"] + span::after {
+	content: '';
+
+	opacity: 0;
+	transition: opacity 0.25s ease;
+}
+
+.backform-radio[type="radio"]:checked + span::after {
+	inline-size: 9px;
+	block-size: 9px;
+
+	display: inline-block;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	background: #000;
+
+	border-radius: 50%;
+
+	opacity: 1;
+	transition: opacity 0.25s ease;
+}
+
+.backform-cross {
+	min-inline-size: 20px;
+	block-size: 20px;
+	opacity: 0.75;
+
+	position: absolute;
+	top: 25px;
+	right: 25px;
+
+	cursor: pointer;
+	background: url(../svg/cross.svg);
+	transition: all 0.2s ease;
+}
+
+.backform-cross:hover {
+	transform: scale(1.1);
+	opacity: 1;
+}
+
+.backform-description {
+	margin-block-end: clamp(0.9375rem, 0.71rem + 0.9709vw, 1.875rem);
+
+	font-size: clamp(0.875rem, 0.8447rem + 0.1294vw, 1rem);
+	line-height: clamp(1.375rem, 1.3295rem + 0.1942vw, 1.5625rem);
+
+	grid-column: 1;
+	color: var(--silent-color);
+}
+
+.backform-container {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+
+	grid-row: 1;
+	grid-column: 2;
+}
+
+.backform__input {
+	padding: 15px;
+
+	border: 1px solid #b7b7eb;
+	border-radius: 15px;
+}
+
+.backform__input:focus {
+	border: none;
+	outline: 2px solid #A9A9A9;
+}
+
+.backform__input::placeholder {
+	font-family: var(--main-ff);
+	font-size: 14px;
+}
+
+
+.backform__button {
+	padding: 20px 60px;
+	border-radius: 15px;
+}
+
+.backform__secured {
+	margin-block-start: 10px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	grid-column: 2;
+
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 19px;
+	color: var(--silent-color)
+}
+
+.backform__secured::before {
+	content: "";
+
+	margin-inline-end: 10px;
+
+	inline-size: 35px;
+	block-size: 15px;
+
+	display: inline-block;
+
+	background: url('../svg/secured.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.backform.show {
+	opacity: 1;
+	z-index: 11;
+}
+
+.backform__blackout.show {
+	opacity: 0.5;
+	z-index: 10;
+}
+
+.form__success.show {
+	display: block;
+}
+

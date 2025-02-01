@@ -1,0 +1,122 @@
+@keyframes scaling-hover {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(1.05);
+	}
+}
+
+@keyframes icons-hover {
+  from {
+		opacity: 0.6;
+		transform: scale(1);
+  }
+  to {
+		opacity: 1;
+		transform: scale(1.05);
+  }
+}
+
+@keyframes button-text-hover {
+	from {
+		font-size: 1em;
+	}
+	to {
+		font-size: calc(1em + 5%);
+	}
+}
+
+@keyframes button-text-hover-back {
+	from {
+		font-size: calc(1em + 5%);
+	}
+
+	to {
+		font-size: 1em;
+	}
+}
+
+@keyframes catalog-hover {
+	from {
+		bottom: -100px;
+	}
+
+	to {
+		bottom: 15px;
+	}
+}
+
+@keyframes catalog-hover-back {
+	from {
+		bottom: 15px;
+	}	
+
+	to {
+		bottom: -100px;
+	}
+}
+
+@keyframes coloring-hover {
+	from {
+		color: var(--main-color);
+	}
+
+	to {
+		color: var(--supporting-color);
+	}
+}
+
+@keyframes coloring-hover-back {
+	from {
+		color: var(--supporting-color);
+	}
+	
+	to {
+		color: var(--main-color)
+	}
+}
+
+@keyframes company-hover {
+	from {
+		transform: scale(1);
+		border: none;
+	}
+
+	to {
+		transform: scale(1.1);
+		border: 1px solid var(--supporting-color);
+	}
+}
+
+@keyframes company-hover-back {
+	from {
+		transform: scale(1.1);
+		border: 1px solid var(--supporting-color)
+	}
+
+	to {
+		transform: scale(1);
+		border: none;
+	}
+}
+
+@keyframes burger-margin {
+	from {
+		left: -1000px;
+	}
+	
+	to {
+		left: 0;
+	}
+}
+
+@keyframes burger-margin-back {
+	from {
+		left: 0;
+	}
+	
+	to {
+		left: -1000px;
+	}
+}

@@ -1,0 +1,329 @@
+.main {
+	padding-inline: clamp(0.625rem, -2.8641rem + 14.8867vw, 15rem);
+
+	max-inline-size: 100vw;
+}
+
+/* Scheme */
+
+.main__scheme {
+	margin-block-start: clamp(6.25rem, 5.4915rem + 3.2362vw, 9.375rem);
+}
+
+.main__step-list {
+	margin-block-start: clamp(1.875rem, 1.5716rem + 1.2945vw, 3.125rem);
+
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+}
+
+.main__step-list-item {
+	inline-size: clamp(15.625rem, 14.4114rem + 5.178vw, 20.625rem);
+}
+
+.main__step-label {
+	margin-block-end: clamp(0.625rem, 0.3216rem + 1.2945vw, 1.875rem);
+
+	display: block;
+
+	font-weight: 400;
+	font-size: 48px;
+	line-height: 1.5;
+	color: var(--supporting-color);
+}
+
+.main__step-title	{
+	margin-block-end: 10px;
+	font-weight: 500;
+
+	font-family: var(--main-ff);
+}
+
+.main__step-description {
+	color: var(--silent-color);
+}
+
+.main__scheme-arrows {
+	display: none;
+}
+
+.main__scheme-stepping {
+	padding-inline: 20px;
+	padding-block: 10px;
+}
+
+.main__scheme-backform-btn {
+	margin-block-start: 15px;
+	margin-inline: auto;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+
+	font-size: clamp(0.875rem, 0.8447rem + 0.1294vw, 1rem);
+	color: var(--supporting-color);
+	font-family: inherit;
+	font-weight: 700;
+
+	border: none;
+	background: transparent;
+	cursor: pointer;
+
+	transition: all 0.3s ease;
+}
+
+.main__scheme-backform-btn:hover {
+	transform: scale(1.1);
+}
+
+.main__scheme-backform-btn::after,
+.main__scheme-backform-btn::before {
+	content: "";
+
+	width: 40px;
+	height: 1px;
+
+	opacity: 0.75;
+	background: url('../../svg/mainSvgs/blue-stick.svg')
+}
+
+/* Catalog */
+
+.main__catalog {
+	margin-block-start: clamp(6.25rem, 5.4915rem + 3.2362vw, 9.375rem);
+
+	display: flex;
+	flex-wrap: wrap;
+	align-items: start;
+}
+
+.main__catalog-list {
+	margin-block-start: clamp(1.875rem, 1.5716rem + 1.2945vw, 3.125rem);
+
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+
+	gap: clamp(0.9375rem, 0.71rem + 0.9709vw, 1.875rem);
+}
+
+.main__catalog-list-item {
+	padding: 5px;
+
+	inline-size: 100%;
+	block-size: clamp(15.625rem, 14.8665rem + 3.2362vw, 18.75rem);
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	position: relative;
+	overflow: hidden;
+
+	border-radius: 15px;
+	box-shadow: 0 0 10px 0 #000;
+
+	text-align: center;
+
+	transition: all 0.3s ease;
+}
+
+.main__catalog-list-item:hover {
+	transform: scale(1.1);
+}
+
+.main__catalog-list-item .blackout {
+	border-radius: 15px;
+	opacity: 0.3;
+}
+
+.main__catalog-list-item:first-child {
+	background: url('../../images/septik.jpeg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.main__catalog-list-item:nth-child(2) {
+	background: url('../../images/drenazh.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.main__catalog-list-item:nth-child(3) {
+	background: url('../../images/Cesson.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.main__catalog-list-item:nth-child(4) {
+	background: url('../../images/vodoprovod.jpeg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.main__catalog-list-item:nth-child(5) {
+	background: url('../../images/otoplenie.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	grid-column: 2;
+}
+
+.main__catalog-list-item:last-child {
+	background: url('../../images/pogreb.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	grid-column: 3;
+}
+
+.main__catalog-item-title {
+	position: relative;
+	z-index: 1;
+	color: #fff;
+	font-weight: 400;
+}
+
+.main__catalog-item-description {
+	margin-block-end: 20px;
+
+	position: relative;
+	z-index: 1;
+
+	color: #fff;
+	font-weight: 300;
+}
+
+.main__show-full {
+	position: absolute;
+	bottom: -100px;
+
+	padding-block: 5px;
+	padding-inline: 8px;
+
+	color: #ffffff;
+	font-family: inherit;
+	font-size: clamp(0.875rem, 0.8143rem + 0.2589vw, 1.125rem);;
+
+	cursor: pointer;
+	border: none;
+	background: transparent;
+
+	animation: catalog-hover-back 0.5s ease;
+}
+
+.main__catalog-list-item:hover .main__show-full {
+	animation: catalog-hover 0.3s ease;
+	animation-delay: 0.1s;
+	animation-fill-mode: forwards;
+}
+
+.main__catalog-full-catalog {
+	margin-block-start:clamp(0.9375rem, 0.5583rem + 1.6181vw, 2.5rem);
+	margin-inline: auto;
+	padding-block: clamp(0.625rem, 0.4733rem + 0.6472vw, 1.25rem);
+	padding-inline: clamp(1.25rem, 0.71rem + 0.9709vw, 2.25rem);
+
+	display: flex;
+
+	border-radius: 50px;
+	box-shadow: 0 0 5px 1px #000000a6;
+}
+
+/* Companies */
+
+.main__companies {
+	margin-block-start: clamp(6.25rem, 5.4915rem + 3.2362vw, 9.375rem);
+}
+
+.main__companies-container {
+	margin-block-start: clamp(1.875rem, 1.5716rem + 1.2945vw, 3.125rem);
+
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 40px;
+}
+
+.main__company {
+	padding-block: clamp(1.875rem, 1.5716rem + 1.2945vw, 3.125rem);
+
+	max-inline-size: 100%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 50px;
+
+	cursor: pointer;
+
+	animation: company-hover-back 0.25s ease;
+}
+
+.main__company-title {
+	font-weight: 300;
+
+	animation: coloring-hover-back 0.25s ease;
+}
+
+.main__company-image {
+	max-inline-size: clamp(7.8125rem, 6.6748rem + 4.8544vw, 12.5rem);
+	max-block-size: 75px;
+}
+
+.main__company-textes {
+	display: flex;
+	flex-direction: column;
+}
+
+.main__company-description {
+	word-wrap: break-word;
+}
+
+.main__company:hover {
+	animation: company-hover 0.25s ease;
+	animation-delay: 0.1s;
+	animation-fill-mode: forwards;
+}
+
+.main__company:hover .main__company-title {
+	animation: coloring-hover 0.25s ease;
+	animation-delay: 0.1s;
+	animation-fill-mode: forwards;
+}
+
+/* About us */
+
+.main__about-us {
+	margin-block-start: clamp(6.25rem, 5.4915rem + 3.2362vw, 9.375rem);
+}
+
+.main__about-us-context {
+	margin-block-start: clamp(3.125rem, 2.3665rem + 3.2362vw, 6.25rem);
+
+	display: grid;
+	grid-template-columns: max-content 1fr;
+	align-items: center;
+	gap: clamp(3.125rem, 2.0631rem + 4.5307vw, 7.5rem);
+}
+
+.main__about-us-image {
+	inline-size: 350px;
+	block-size: 300px;
+
+	box-shadow: 0 0 3px 1px #00000085;
+	border-radius: 250px;
+}
+
+.main__about-context-title {
+	margin-block-end: clamp(0.9375rem, 0.71rem + 0.9709vw, 1.875rem);
+
+	font-size: clamp(1.5rem, 1.2573rem + 1.0356vw, 2.5rem);
+	font-weight: 300;
+}

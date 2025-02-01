@@ -1,0 +1,20 @@
+:root {
+	--headers-ff: 'BebasNeue';
+	--main-ff: 'Noto Sans';
+
+	--main-color: #292D33;
+	--supporting-color: #5C8EE5;
+	--silent-color: #828A99;
+
+	--h1-font-size: clamp(3rem, 2.5146rem + 2.0712vw, 5rem);;
+	--h2-font-size: clamp(2.25rem, 1.8859rem + 1.5534vw, 3.75rem);
+	--h3-font-size: clamp(1.25rem, 1.1286rem + 0.5178vw, 1.75rem);
+	--par-font-size: clamp(0.875rem, 0.8447rem + 0.1294vw, 1rem);
+	--reduced-font-size: 12px;
+
+	--h1-line-height: clamp(6rem, 6.5765rem + -2.4595vw, 3.625rem);
+	--h2-line-height: clamp(2.6875rem, 2.2476rem + 1.877vw, 4.5rem);;
+	--h3-line-height: clamp(1.625rem, 1.3368rem + 1.2298vw, 2.8125rem);;
+	--par-line-height: clamp(1.375rem, 1.3295rem + 0.1942vw, 1.5625rem);;
+	--reduced-line-height: 19px;
+}

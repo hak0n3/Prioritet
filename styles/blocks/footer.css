@@ -136,21 +136,6 @@
 	background-position: center;
 }
 
-.footer__vk::before {
-	content: '';
-
-	block-size: 25px;
-	inline-size: 25px;
-
-	display: inline-block;
-
-	background: url('../../svg/footerSvgs/vk.svg');
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: center;
-}
-
-
 /* Footer main */
 
 .footer__main {

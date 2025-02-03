@@ -29,29 +29,26 @@
 		<form id="backform-id" onsubmit="return false" class="backform-container" action="./data/send.php" method="post">
 			<span>Как удобнее общаться?</span>
 			<label for="phone" class="backform-radio-label">
-				<input id="phone" value="phone" type="radio" name="contact" class="backform-radio visually-hidden"
-					checked>
+				<input id="phone" value="phone" type="radio" name="contact" class="backform-radio visually-hidden" checked>
 				<span></span>
 				По телефону</label>
 			<label for="telegram" class="backform-radio-label">
-				<input id="telegram" value="telegram" type="radio" name="contact"
-					class="backform-radio visually-hidden">
+				<input id="telegram" value="telegram" type="radio" name="contact" class="backform-radio visually-hidden">
 				<span></span>
 				Чат в Telegram
 			</label>
 			<label for="whatsapp" class="backform-radio-label">
-				<input id="whatsapp" value="whatsapp" type="radio" name="contact"
-					class="backform-radio visually-hidden">
+				<input id="whatsapp" value="whatsapp" type="radio" name="contact" class="backform-radio visually-hidden">
 				<span></span>
 				Чат в Whatsapp
 			</label>
 
 			<label class="visually-hidden" for="backform__name">Ваше имя</label>
-			<input type="text" value="" name="name" class="backform__input input" id="backform__name" placeholder="Ваше имя" required
-				autocomplete="name">
+			<input type="text" value="" name="name" class="backform__input input" id="backform__name" placeholder="Ваше имя"
+				required autocomplete="name">
 			<label class="visually-hidden" for="backform__tel">Телефонный номер</label>
-			<input type="tel" value="" name="tel" class="backform__input input" id="backform__tel" placeholder="+7 (123) 456-78-90" required
-				autocomplete="tel">
+			<input type="tel" value="" name="tel" class="backform__input input" id="backform__tel"
+				placeholder="+7 (123) 456-78-90" required autocomplete="tel">
 
 			<button type="submit" class="backform__button button">Отправить заявку</button>
 		</form>
@@ -94,8 +91,8 @@
 						<a href="./heating" class="burger__list-link burger__country-house-link">Отопление</a>
 					</li>
 					<li class="burger__list-item burger__country-house-list-item">
-						<a href="./water-underfloor-heating"
-							class="burger__list-link burger__country-house-link">Водяные тёплые полы</a>
+						<a href="./water-underfloor-heating" class="burger__list-link burger__country-house-link">Водяные тёплые
+							полы</a>
 					</li>
 					<li class="burger__list-item burger__country-house-list-item">
 						<a href="./smart-heating" class="burger__list-link burger__country-house-link">"Умное" отопление
@@ -141,7 +138,7 @@
 			</div>
 			<div class="header__links">
 				<a href="#" class="header__logo-link logo-link">
-					<img src="./images/logo.png" alt="Лого Импакт" class="header__logo"> <!--Поменять-->
+					<img src="./images/logo.png" alt="Лого Импакт" class="header__logo">
 				</a>
 				<nav class="header__navigation">
 					<ul class="header__nav-list">
@@ -233,10 +230,6 @@
 					<p class="header__fact">Контроль качества на всех этапах</p>
 				</li>
 				<li class="header__facts-item">
-					<img src="./svg/headerSvgs/delivery.svg" alt="Иконка факта" class="header__fact-image svg">
-					<p class="header__fact">Возможно поставки по всей России</p>
-				</li>
-				<li class="header__facts-item">
 					<img src="./svg/headerSvgs/optimal.svg" alt="Иконка факта" class="header__fact-image svg">
 					<p class="header__fact">Оперативное производство</p>
 				</li>
@@ -273,14 +266,13 @@
 				<li class="main__step-list-item">
 					<span class="main__step-label">04</span>
 					<h3 class="main__step-title">Заключение</h3>
-					<p class="main__step-description">Выполняем проверку всех установленных коммуникация и проводим
+					<p class="main__step-description">Выполняем проверку всех установленных коммуникаций и проводим
 						внутренюю
 						приёмку. Убираем мусор, вывозим инструменты, Фиксируем объем выполненных работ и сдаём проект.
 					</p>
 				</li>
 			</ul>
-			<div class="main__scheme-arrows"> <button type="button"
-					class="main__scheme-left main__scheme-stepping button">
+			<div class="main__scheme-arrows"> <button type="button" class="main__scheme-left main__scheme-stepping button">
 					<img src="./svg/mainSvgs/left.svg" alt="Предыдущий пункт схемы" class="main__scheme-arrow">
 				</button>
 				<button type="button" class="main__scheme-right main__scheme-stepping button">
@@ -290,42 +282,66 @@
 		</section>
 		<section class="main__catalog" id="catalog">
 			<h2 class="main__catalog-title">Каталог</h2>
+			<h3 class="main__catalog-subtitle">Для загородных домов</h3>
 			<ul class="main__catalog-list">
 				<li class="main__catalog-list-item">
-					<h3 class="main__catalog-item-title">Септики для дома</h3>
-					<p class="main__catalog-item-description">Полный каталог септиков</p>
+					<h4 class="main__catalog-item-title">Все системы "под ключ"</h4>
 					<div class="blackout"></div>
 					<a href="./sdf" class="main__show-full"">Посмотреть полный каталог</a>
 				</li>
-				<li class=" main__catalog-list-item">
-						<h3 class="main__catalog-item-title">Дренаж участка</h3>
-						<p class="main__catalog-item-description">Дренаж/осушение участков без щебня</p>
+				<li class="main__catalog-list-item">
+					<h4 class="main__catalog-item-title">Отопление</h4>
+					<div class="blackout"></div>
+					<a href="./sdf" class="main__show-full">Посмотреть полный каталог</a>
+				</li>
+				<li class="main__catalog-list-item">
+					<h4 class="main__catalog-item-title">Водяные тёплые полы</h4>
+					<div class="blackout"></div>
+					<a href="./sdf" class="main__show-full"">Посмотреть полный каталог</a>
+				</li>
+				<li class="main__catalog-list-item">
+					<h4 class="main__catalog-item-title">"Умное" отопление и автоматика"</h4>
+					<div class="blackout"></div>
+					<a href="./sdf" class="main__show-full"">Посмотреть полный каталог</a>
+				</li>
+				<li class="main__catalog-list-item">
+						<h4 class="main__catalog-item-title">Водоснабжение</h4>
 						<div class="blackout"></div>
-						<a href="./sdf" class="main__show-full"">Посмотреть полный каталог</a>
-				</li>
-				<li class=" main__catalog-list-item">
-							<h3 class="main__catalog-item-title">Кессоны</h3>
-							<p class="main__catalog-item-description">Кессоны для установки оборудования</p>
-							<div class="blackout"></div>
-							<a href="./sdf" class="main__show-full"">Посмотреть полный каталог</a>
-				</li>
-				<li class=" main__catalog-list-item">
-								<h3 class="main__catalog-item-title">Водопровод</h3>
-								<p class="main__catalog-item-description">Всё для водопровода в загородных домах</p>
-								<div class="blackout"></div>
-								<a href="./sdf" class="main__show-full">Посмотреть полный каталог</a>
+						<a href="./sdf" class="main__show-full">Посмотреть полный каталог</a>
 				</li>
 				<li class="main__catalog-list-item">
-					<h3 class="main__catalog-item-title">Отопление загородных домов</h3>
-					<p class="main__catalog-item-description">Услуги по монтажу отопления</p>
+					<h4 class="main__catalog-item-title">Электрика</h4>
 					<div class="blackout"></div>
 					<a href="./sdf" class="main__show-full">Посмотреть полный каталог</a>
 				</li>
 				<li class="main__catalog-list-item">
-					<h3 class="main__catalog-item-title">Погреба</h3>
-					<p class="main__catalog-item-description">Пластиковые погреба для хранения продуктов</p>
+					<h4 class="main__catalog-item-title">Проектирование</h4>
 					<div class="blackout"></div>
 					<a href="./sdf" class="main__show-full">Посмотреть полный каталог</a>
+				</li>
+			</ul>
+			<a href="./sdf" class="main__catalog-full-catalog button">Посмотреть весь каталог</a>
+			<h3 class="main__catalog-subtitle main__catalog-list-commercial">Для коммерческих помещений</h3>
+			<ul class="main__catalog-list">
+				<li class="main__catalog-list-item main__catalog-list-item-commercial">
+					<h4 class="main__catalog-item-title">Инженерные системы</h4>
+					<div class="blackout"></div>
+					<a href="./sdf" class="main__show-full"">Посмотреть полный каталог</a>
+				</li>
+				<li class="main__catalog-list-item main__catalog-list-item-commercial">
+					<h4 class="main__catalog-item-title">Тепловентиляторы и завесы</h4>
+					<div class="blackout"></div>
+					<a href="./sdf" class="main__show-full">Посмотреть полный каталог</a>
+				</li>
+				<li class="main__catalog-list-item main__catalog-list-item-commercial">
+					<h4 class="main__catalog-item-title">Котельные</h4>
+					<div class="blackout"></div>
+					<a href="./sdf" class="main__show-full"">Посмотреть полный каталог</a>
+				</li>
+				<li class="main__catalog-list-item main__catalog-list-item-commercial">
+					<h4 class="main__catalog-item-title">Для застройщиков</h4>
+					<div class="blackout"></div>
+					<a href="./sdf" class="main__show-full"">Посмотреть полный каталог</a>
 				</li>
 			</ul>
 			<a href="./sdf" class="main__catalog-full-catalog button">Посмотреть весь каталог</a>
@@ -333,13 +349,13 @@
 		<section class="main__companies" id="companies">
 			<h2 class="main__companies-title">Собственные компании</h2>
 			<div class="main__companies-container">
-				<a href="./sdf" class="main__company">
+				<!-- <a href="./sdf" class="main__company">
 					<img src="./images/aib-logo.png" alt="Магазин АиБ" class="main__company-image">
 					<div class="main__company-textes">
 						<h3 class="main__company-title">Магазин АиБ</h3>
 						<p class="main__company-description">Описание магазина</p>
 					</div>
-				</a>
+				</a> -->
 				<a href="#header" class="main__company">
 					<img src="./images/logo.png" alt="Инжерно-монтажные услуги Приоритет" class="main__company-image">
 					<div class="main__company-textes">
@@ -355,18 +371,19 @@
 				<img src="./images/OurObject.jpg" alt="Наш объект" class="main__about-us-image">
 				<div class="main__about-us-textes">
 					<h3 class="main__about-context-title">Мы - эксперты в области монтажа и проектирования</h3>
-					<p class="main__about-context-description">Разнообразный и богатый опыт говорит нам, что
-						перспективное
-						планирование однозначно фиксирует необходимость поставленных обществом задач! Есть над чем
-						задуматься:
-						ключевые особенности структуры проекта могут быть объединены в целые кластеры себе подобных.
-						Интерактивные
-						прототипы, которые представляют собой яркий пример континентально-европейского типа политической
-						культуры,
-						будут описаны максимально подробно. Значимость этих проблем настолько очевидна, что
-						перспективное
-						планирование
-						играет важную роль в формировании системы массового участия.</p>
+					<p class="main__about-context-description">Успех нашей команды заключается в многолетнем опыте в области
+						монтажа инженерных систем, строительстве и индивидуальном подходе к каждому клиенту. </p>
+					<p class="main__about-context-description">На нашем счету сотни метров протянутых труб, километры уложенных
+						теплых полов, тысячи кубов проведенной в
+						дома горячей и холодной воды, тысячи квадратных метров уюта и тепла.<br>
+						Наша миссия - доступный комфорт в каждый дом! <br>
+						Наши ценности – семья, честность и безопасность. <br>
+						Наша гордость – благодарные и довольные клиенты. <br>
+					</p>
+					<p class="main__about-context-description">
+						Именно поэтому мы ответственно подходим к поставленным задачам и качественно выполняем свою работу.
+						Именно поэтому мы сотрудничаем только с проверенными поставщиками и используем материалы высокого класса.
+					</p>
 				</div>
 			</div>
 		</section>
@@ -374,7 +391,7 @@
 	<footer class="footer">
 		<div class="footer__top">
 			<a href="#" class="footer__logo-link logo-link">
-				<img src="./images/logo.png" alt="Лого Импакт" class="header__logo"> <!--Поменять-->
+				<img src="./images/logo.png" alt="Лого Импакт" class="header__logo">
 			</a>
 			<a href="tel:+78126797000" class="footer__number">+7 (812) 679-70-00</a>
 			<div class="footer__contacts">
@@ -382,11 +399,8 @@
 					<address class="footer__address">пос. Лукаши, ул. Заводская 18А</address>
 					<span class="footer__email">prioritet.contact@gmail.com</span>
 				</div>
-				<div class="footer__socials">
-					<a href="https://t.me/zagorodnoe_stroitelstvo" class="footer__tg footer__social" target="_blank">Мы
-						в Telegram</a>
-					<a href="/vk" class="footer__vk footer__social" target="_blank">Мы во Вконтакте</a>
-				</div>
+				<a href="https://t.me/zagorodnoe_stroitelstvo" class="footer__tg footer__social" target="_blank">Мы
+					в Telegram</a>
 			</div>
 		</div>
 		<div class="footer__main">

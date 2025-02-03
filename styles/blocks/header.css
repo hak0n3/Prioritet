@@ -233,6 +233,7 @@
 	position: fixed;
 	z-index: 999;
 	left: -1000px;
+	opacity: 0;
 
 	border-start-end-radius: 35px;
 	border-end-end-radius: 35px;

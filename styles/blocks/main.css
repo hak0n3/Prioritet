@@ -95,12 +95,19 @@
 	margin-block-start: clamp(6.25rem, 5.4915rem + 3.2362vw, 9.375rem);
 
 	display: flex;
+	flex-direction: column;
 	flex-wrap: wrap;
 	align-items: start;
 }
 
+.main__catalog-subtitle {
+	margin-block-start: 25px;
+
+	font-weight: 300;
+}
+
 .main__catalog-list {
-	margin-block-start: clamp(1.875rem, 1.5716rem + 1.2945vw, 3.125rem);
+	margin-block-start: 10px;
 
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
@@ -109,7 +116,7 @@
 }
 
 .main__catalog-list-item {
-	padding: 5px;
+	padding: 8px;
 
 	inline-size: 100%;
 	block-size: clamp(15.625rem, 14.8665rem + 3.2362vw, 18.75rem);
@@ -126,62 +133,66 @@
 
 	text-align: center;
 
-	transition: all 0.3s ease;
-}
-
-.main__catalog-list-item:hover {
-	transform: scale(1.1);
+	transition: transform 0.3s ease, background-size 0.25s ease;
 }
 
 .main__catalog-list-item .blackout {
 	border-radius: 15px;
-	opacity: 0.3;
+	opacity: 0.4;
 }
 
 .main__catalog-list-item:first-child {
-	background: url('../../images/septik.jpeg');
+	background: url('../../images/engin-sys.jpg');
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 200%;
 	background-position: center;
 }
 
 .main__catalog-list-item:nth-child(2) {
-	background: url('../../images/drenazh.jpg');
+	background: url('../../images/otoplenie.jpg');
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 200%;
 	background-position: center;
 }
 
 .main__catalog-list-item:nth-child(3) {
-	background: url('../../images/Cesson.jpg');
+	background: url('../../images/waterfloors.jpg');
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 200%;
 	background-position: center;
 }
 
 .main__catalog-list-item:nth-child(4) {
-	background: url('../../images/vodoprovod.jpeg');
+	background: url('../../images/smart.jpg');
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 200%;
 	background-position: center;
 }
 
 .main__catalog-list-item:nth-child(5) {
-	background: url('../../images/otoplenie.jpg');
+	background: url('../../images/water.jpg');
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 200%;
 	background-position: center;
+}
 
-	grid-column: 2;
+.main__catalog-list-item:nth-child(6) {
+	background: url('../../images/electric.jpg');
+	background-repeat: no-repeat;
+	background-size: 200%;
+	background-position: center;
 }
 
 .main__catalog-list-item:last-child {
-	background: url('../../images/pogreb.jpg');
+	background: url('../../images/proecting.jpg');
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 200%;
 	background-position: center;
+}
 
-	grid-column: 3;
+.main__catalog-list-item:hover {
+	transform: scale(1.05);
+	background-size: 215%;
 }
 
 .main__catalog-item-title {
@@ -189,6 +200,8 @@
 	z-index: 1;
 	color: #fff;
 	font-weight: 400;
+	font-size: clamp(1.25rem, 1.1893rem + 0.2589vw, 1.5rem);
+	font-family: var(--headers-ff);
 }
 
 .main__catalog-item-description {
@@ -237,6 +250,51 @@
 	box-shadow: 0 0 5px 1px #000000a6;
 }
 
+.main__catalog-list-commercial {
+	margin-block-start: 50px;
+}
+
+.main__catalog-list-item-commercial:first-child {
+	background: url('../../images/engin-sys-comm.jpg');
+	background-repeat: no-repeat;
+	background-size: 200%;
+	background-position: center;
+}
+
+.main__catalog-list-item-commercial:nth-child(2) {
+	background: url('../../images/fanheater.avif');
+	background-repeat: no-repeat;
+	background-size: 125%;
+	background-position: center;
+}
+
+.main__catalog-list-item-commercial:nth-child(3) {
+	background: url('../../images/boiler.jpg');
+	background-repeat: no-repeat;
+	background-size: 200%;
+	background-position: center;
+}
+
+.main__catalog-list-item-commercial:last-child {
+	background: url('../../images/devs.webp');
+	background-repeat: no-repeat;
+	background-size: 250%;
+	background-position: center;
+}
+
+.main__catalog-list-item-commercial:hover {
+	transform: scale(1.1);
+	background-size: 215%;
+}
+
+.main__catalog-list-item-commercial:nth-child(2):hover {
+	background-size: 140%;
+}
+
+.main__catalog-list-item-commercial:last-child:hover {
+	background-size: 265%;
+}
+
 /* Companies */
 
 .main__companies {
@@ -246,13 +304,14 @@
 .main__companies-container {
 	margin-block-start: clamp(1.875rem, 1.5716rem + 1.2945vw, 3.125rem);
 
-	display: grid;
-	grid-template-columns: 1fr 1fr;
+	display: flex;
+	justify-content: center;
 	gap: 40px;
 }
 
 .main__company {
 	padding-block: clamp(1.875rem, 1.5716rem + 1.2945vw, 3.125rem);
+	padding-inline: 50px;
 
 	max-inline-size: 100%;
 
@@ -326,4 +385,8 @@
 
 	font-size: clamp(1.5rem, 1.2573rem + 1.0356vw, 2.5rem);
 	font-weight: 300;
+}
+
+.main__about-context-description {
+	margin-block-start: 15px;
 }

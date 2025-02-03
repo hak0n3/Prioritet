@@ -6,6 +6,9 @@
 	<meta name="viewport"
 		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>Приоритет | Главная</title>
+	<link rel="shortcut icon" href="./images/icon.ico" sizes="any">
+	<link rel="shortcut icon" href="./images/icon.svg" type="image/svg+xml">
+	<link rel="apple-touch-icon" href="./images/icon.png">
 	<link rel="stylesheet" href="./styles/normalize.css">
 	<link rel="stylesheet" href="./styles/fonts.css">
 	<link rel="stylesheet" href="./styles/variables.css">
@@ -26,26 +29,30 @@
 			<p class="backform-description">Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время, ответит
 				интересующие на все вопросы и поможет даже в самых сложных случаях! </p>
 		</div>
-		<form id="backform-id" onsubmit="return false" class="backform-container" action="./data/send.php" method="post">
+		<form id="backform-id" onsubmit="return false" class="backform-container" action="./data/send.php"
+			method="post">
 			<span>Как удобнее общаться?</span>
 			<label for="phone" class="backform-radio-label">
-				<input id="phone" value="phone" type="radio" name="contact" class="backform-radio visually-hidden" checked>
+				<input id="phone" value="phone" type="radio" name="contact" class="backform-radio visually-hidden"
+					checked>
 				<span></span>
 				По телефону</label>
 			<label for="telegram" class="backform-radio-label">
-				<input id="telegram" value="telegram" type="radio" name="contact" class="backform-radio visually-hidden">
+				<input id="telegram" value="telegram" type="radio" name="contact"
+					class="backform-radio visually-hidden">
 				<span></span>
 				Чат в Telegram
 			</label>
 			<label for="whatsapp" class="backform-radio-label">
-				<input id="whatsapp" value="whatsapp" type="radio" name="contact" class="backform-radio visually-hidden">
+				<input id="whatsapp" value="whatsapp" type="radio" name="contact"
+					class="backform-radio visually-hidden">
 				<span></span>
 				Чат в Whatsapp
 			</label>
 
 			<label class="visually-hidden" for="backform__name">Ваше имя</label>
-			<input type="text" value="" name="name" class="backform__input input" id="backform__name" placeholder="Ваше имя"
-				required autocomplete="name">
+			<input type="text" value="" name="name" class="backform__input input" id="backform__name"
+				placeholder="Ваше имя" required autocomplete="name">
 			<label class="visually-hidden" for="backform__tel">Телефонный номер</label>
 			<input type="tel" value="" name="tel" class="backform__input input" id="backform__tel"
 				placeholder="+7 (123) 456-78-90" required autocomplete="tel">
@@ -91,7 +98,8 @@
 						<a href="./heating" class="burger__list-link burger__country-house-link">Отопление</a>
 					</li>
 					<li class="burger__list-item burger__country-house-list-item">
-						<a href="./water-underfloor-heating" class="burger__list-link burger__country-house-link">Водяные тёплые
+						<a href="./water-underfloor-heating"
+							class="burger__list-link burger__country-house-link">Водяные тёплые
 							полы</a>
 					</li>
 					<li class="burger__list-item burger__country-house-list-item">
@@ -272,7 +280,8 @@
 					</p>
 				</li>
 			</ul>
-			<div class="main__scheme-arrows"> <button type="button" class="main__scheme-left main__scheme-stepping button">
+			<div class="main__scheme-arrows"> <button type="button"
+					class="main__scheme-left main__scheme-stepping button">
 					<img src="./svg/mainSvgs/left.svg" alt="Предыдущий пункт схемы" class="main__scheme-arrow">
 				</button>
 				<button type="button" class="main__scheme-right main__scheme-stepping button">
@@ -289,25 +298,25 @@
 					<div class="blackout"></div>
 					<a href="./sdf" class="main__show-full"">Посмотреть полный каталог</a>
 				</li>
-				<li class="main__catalog-list-item">
-					<h4 class="main__catalog-item-title">Отопление</h4>
-					<div class="blackout"></div>
-					<a href="./sdf" class="main__show-full">Посмотреть полный каталог</a>
+				<li class=" main__catalog-list-item">
+						<h4 class="main__catalog-item-title">Отопление</h4>
+						<div class="blackout"></div>
+						<a href="./sdf" class="main__show-full">Посмотреть полный каталог</a>
 				</li>
 				<li class="main__catalog-list-item">
 					<h4 class="main__catalog-item-title">Водяные тёплые полы</h4>
 					<div class="blackout"></div>
 					<a href="./sdf" class="main__show-full"">Посмотреть полный каталог</a>
 				</li>
-				<li class="main__catalog-list-item">
-					<h4 class="main__catalog-item-title">"Умное" отопление и автоматика"</h4>
-					<div class="blackout"></div>
-					<a href="./sdf" class="main__show-full"">Посмотреть полный каталог</a>
-				</li>
-				<li class="main__catalog-list-item">
-						<h4 class="main__catalog-item-title">Водоснабжение</h4>
+				<li class=" main__catalog-list-item">
+						<h4 class="main__catalog-item-title">"Умное" отопление и автоматика"</h4>
 						<div class="blackout"></div>
-						<a href="./sdf" class="main__show-full">Посмотреть полный каталог</a>
+						<a href="./sdf" class="main__show-full"">Посмотреть полный каталог</a>
+				</li>
+				<li class=" main__catalog-list-item">
+							<h4 class="main__catalog-item-title">Водоснабжение</h4>
+							<div class="blackout"></div>
+							<a href="./sdf" class="main__show-full">Посмотреть полный каталог</a>
 				</li>
 				<li class="main__catalog-list-item">
 					<h4 class="main__catalog-item-title">Электрика</h4>
@@ -328,23 +337,23 @@
 					<div class="blackout"></div>
 					<a href="./sdf" class="main__show-full"">Посмотреть полный каталог</a>
 				</li>
-				<li class="main__catalog-list-item main__catalog-list-item-commercial">
-					<h4 class="main__catalog-item-title">Тепловентиляторы и завесы</h4>
-					<div class="blackout"></div>
-					<a href="./sdf" class="main__show-full">Посмотреть полный каталог</a>
+				<li class=" main__catalog-list-item main__catalog-list-item-commercial">
+						<h4 class="main__catalog-item-title">Тепловентиляторы и завесы</h4>
+						<div class="blackout"></div>
+						<a href="./sdf" class="main__show-full">Посмотреть полный каталог</a>
 				</li>
 				<li class="main__catalog-list-item main__catalog-list-item-commercial">
 					<h4 class="main__catalog-item-title">Котельные</h4>
 					<div class="blackout"></div>
 					<a href="./sdf" class="main__show-full"">Посмотреть полный каталог</a>
 				</li>
-				<li class="main__catalog-list-item main__catalog-list-item-commercial">
-					<h4 class="main__catalog-item-title">Для застройщиков</h4>
-					<div class="blackout"></div>
-					<a href="./sdf" class="main__show-full"">Посмотреть полный каталог</a>
+				<li class=" main__catalog-list-item main__catalog-list-item-commercial">
+						<h4 class="main__catalog-item-title">Для застройщиков</h4>
+						<div class="blackout"></div>
+						<a href="./sdf" class="main__show-full"">Посмотреть полный каталог</a>
 				</li>
 			</ul>
-			<a href="./sdf" class="main__catalog-full-catalog button">Посмотреть весь каталог</a>
+			<a href=" ./sdf" class="main__catalog-full-catalog button">Посмотреть весь каталог</a>
 		</section>
 		<section class="main__companies" id="companies">
 			<h2 class="main__companies-title">Собственные компании</h2>
@@ -371,9 +380,11 @@
 				<img src="./images/OurObject.jpg" alt="Наш объект" class="main__about-us-image">
 				<div class="main__about-us-textes">
 					<h3 class="main__about-context-title">Мы - эксперты в области монтажа и проектирования</h3>
-					<p class="main__about-context-description">Успех нашей команды заключается в многолетнем опыте в области
+					<p class="main__about-context-description">Успех нашей команды заключается в многолетнем опыте в
+						области
 						монтажа инженерных систем, строительстве и индивидуальном подходе к каждому клиенту. </p>
-					<p class="main__about-context-description">На нашем счету сотни метров протянутых труб, километры уложенных
+					<p class="main__about-context-description">На нашем счету сотни метров протянутых труб, километры
+						уложенных
 						теплых полов, тысячи кубов проведенной в
 						дома горячей и холодной воды, тысячи квадратных метров уюта и тепла.<br>
 						Наша миссия - доступный комфорт в каждый дом! <br>
@@ -381,8 +392,10 @@
 						Наша гордость – благодарные и довольные клиенты. <br>
 					</p>
 					<p class="main__about-context-description">
-						Именно поэтому мы ответственно подходим к поставленным задачам и качественно выполняем свою работу.
-						Именно поэтому мы сотрудничаем только с проверенными поставщиками и используем материалы высокого класса.
+						Именно поэтому мы ответственно подходим к поставленным задачам и качественно выполняем свою
+						работу.
+						Именно поэтому мы сотрудничаем только с проверенными поставщиками и используем материалы
+						высокого класса.
 					</p>
 				</div>
 			</div>

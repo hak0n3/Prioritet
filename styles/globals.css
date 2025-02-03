@@ -89,7 +89,7 @@ p {
 }
   
 .backform {
-	padding: 50px;
+	padding: clamp(1.875rem, 1.5716rem + 1.2945vw, 3.125rem);
 
   inline-size: 50vw;
 	max-block-size: 95vh;
@@ -233,7 +233,7 @@ p {
 .backform-container {
 	display: flex;
 	flex-direction: column;
-	gap: 15px;
+	gap: 10px;
 
 	grid-row: 1;
 	grid-column: 2;

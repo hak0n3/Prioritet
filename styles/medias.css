@@ -124,6 +124,13 @@
 		grid-template-columns: repeat(2, 1fr);
 	}
 
+	.main__company {
+		inline-size: 100%;
+		padding: 5px;
+		display: flex;
+		justify-content: start;
+	}
+
 	.main__companies-container {
 		display: grid;
 		grid-template-columns: 1fr;
@@ -245,6 +252,31 @@
 
 	.burger {
 		inline-size: 50vw;
+	}
+
+	.main__projects-list-item, 
+	.main__projects-list-item:nth-child(2n){
+		grid-template-columns: 1fr;
+	}
+
+	.main__project-image,
+	.main__projects-list-item:nth-child(2n) .main__project-image {
+		height: 100%;
+
+		border-radius: 0;
+		border-bottom-left-radius: 25px;
+		border-bottom-right-radius: 25px;
+	
+		border-top: 1px solid #00000048;
+
+		grid-column: 1;
+		grid-row: 2;
+	}
+
+	.main__project-text-content,
+	.main__projects-list-item:nth-child(2n) .main__project-text-content {
+		grid-column: 1;
+		grid-row: 1;
 	}
 }
 

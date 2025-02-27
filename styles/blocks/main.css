@@ -89,9 +89,9 @@
 	background: url('../../svg/mainSvgs/blue-stick.svg')
 }
 
-/* Catalog */
+/* Projects */
 
-.main__catalog {
+.main__projects {
 	margin-block-start: clamp(6.25rem, 5.4915rem + 3.2362vw, 9.375rem);
 
 	display: flex;
@@ -100,199 +100,66 @@
 	align-items: start;
 }
 
-.main__catalog-subtitle {
-	margin-block-start: 25px;
-
-	font-weight: 300;
-}
-
-.main__catalog-list {
-	margin-block-start: 10px;
-
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-
-	gap: clamp(0.9375rem, 0.71rem + 0.9709vw, 1.875rem);
-}
-
-.main__catalog-list-item {
-	padding: 8px;
+.main__projects-list {
+	margin-block-start: clamp(1.875rem, 1.5716rem + 1.2945vw, 3.125rem);
 
 	inline-size: 100%;
-	block-size: clamp(15.625rem, 14.8665rem + 3.2362vw, 18.75rem);
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 50px;
+}
+
+.main__projects-list-item {
+	max-block-size: 500px;
+	inline-size: 100%;
+
+	display: grid;
+	grid-template-columns: 60% 40%;
+
+	border: 1px solid #00000048;
+	border-radius: 25px;
+}
+
+.main__project-image {
+	max-block-size: 498px;
+
+	border-top-left-radius: 25px;
+	border-bottom-left-radius: 25px;
+
+	border-inline-end: 1px solid #00000048;
+}
+
+.main__project-text-content {
+	padding: 15px;
 
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	
-	position: relative;
-	overflow: hidden;
-
-	border-radius: 15px;
-	box-shadow: 0 0 10px 0 #000;
-
-	text-align: center;
-
-	transition: transform 0.3s ease, background-size 0.25s ease;
+	gap: 15px;
 }
 
-.main__catalog-list-item .blackout {
-	border-radius: 15px;
-	opacity: 0.4;
+
+.main__projects-list-item:nth-child(2n) {
+	grid-template-columns: 40% 60%;
 }
 
-.main__catalog-list-item:first-child {
-	background: url('../../images/engin-sys.jpg');
-	background-repeat: no-repeat;
-	background-size: 200%;
-	background-position: center;
+.main__projects-list-item:nth-child(2n) .main__project-text-content {
+	grid-row: 1;
+	grid-column: 1;
 }
 
-.main__catalog-list-item:nth-child(2) {
-	background: url('../../images/otoplenie.jpg');
-	background-repeat: no-repeat;
-	background-size: 200%;
-	background-position: center;
-}
+.main__projects-list-item:nth-child(2n) .main__project-image {
+	grid-column: 2;
 
-.main__catalog-list-item:nth-child(3) {
-	background: url('../../images/waterfloors.jpg');
-	background-repeat: no-repeat;
-	background-size: 200%;
-	background-position: center;
-}
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
 
-.main__catalog-list-item:nth-child(4) {
-	background: url('../../images/smart.jpg');
-	background-repeat: no-repeat;
-	background-size: 200%;
-	background-position: center;
-}
-
-.main__catalog-list-item:nth-child(5) {
-	background: url('../../images/water.jpg');
-	background-repeat: no-repeat;
-	background-size: 200%;
-	background-position: center;
-}
-
-.main__catalog-list-item:nth-child(6) {
-	background: url('../../images/electric.jpg');
-	background-repeat: no-repeat;
-	background-size: 200%;
-	background-position: center;
-}
-
-.main__catalog-list-item:last-child {
-	background: url('../../images/proecting.jpg');
-	background-repeat: no-repeat;
-	background-size: 200%;
-	background-position: center;
-}
-
-.main__catalog-list-item:hover {
-	transform: scale(1.05);
-	background-size: 215%;
-}
-
-.main__catalog-item-title {
-	position: relative;
-	z-index: 1;
-	color: #fff;
-	font-weight: 400;
-	font-size: clamp(1.25rem, 1.1893rem + 0.2589vw, 1.5rem);
-	font-family: var(--headers-ff);
-}
-
-.main__catalog-item-description {
-	margin-block-end: 20px;
-
-	position: relative;
-	z-index: 1;
-
-	color: #fff;
-	font-weight: 300;
-}
-
-.main__show-full {
-	position: absolute;
-	bottom: -100px;
-
-	padding-block: 5px;
-	padding-inline: 8px;
-
-	color: #ffffff;
-	font-family: inherit;
-	font-size: clamp(0.875rem, 0.8143rem + 0.2589vw, 1.125rem);;
-
-	cursor: pointer;
-	border: none;
-	background: transparent;
-
-	animation: catalog-hover-back 0.5s ease;
-}
-
-.main__catalog-list-item:hover .main__show-full {
-	animation: catalog-hover 0.3s ease;
-	animation-delay: 0.1s;
-	animation-fill-mode: forwards;
-}
-
-.main__catalog-full-catalog {
-	margin-block-start:clamp(0.9375rem, 0.5583rem + 1.6181vw, 2.5rem);
-	margin-inline: auto;
-	padding-block: clamp(0.625rem, 0.4733rem + 0.6472vw, 1.25rem);
-	padding-inline: clamp(1.25rem, 0.71rem + 0.9709vw, 2.25rem);
-
-	display: flex;
-
-	border-radius: 50px;
-	box-shadow: 0 0 5px 1px #000000a6;
-}
-
-.main__catalog-list-commercial {
-	margin-block-start: 50px;
-}
-
-.main__catalog-list-item-commercial:first-child {
-	background: url('../../images/engin-sys-comm.jpg');
-	background-repeat: no-repeat;
-	background-size: 200%;
-	background-position: center;
-}
-
-.main__catalog-list-item-commercial:nth-child(2) {
-	background: url('../../images/fanheater.avif');
-	background-repeat: no-repeat;
-	background-size: 125%;
-	background-position: center;
-}
-
-.main__catalog-list-item-commercial:nth-child(3) {
-	background: url('../../images/boiler.jpg');
-	background-repeat: no-repeat;
-	background-size: 200%;
-	background-position: center;
-}
-
-.main__catalog-list-item-commercial:last-child {
-	background: url('../../images/devs.webp');
-	background-repeat: no-repeat;
-	background-size: 250%;
-	background-position: center;
-}
-
-.main__catalog-list-item-commercial:hover {
-	transform: scale(1.1);
-	background-size: 215%;
-}
-
-.main__catalog-list-item-commercial:nth-child(2):hover {
-	background-size: 140%;
-}
-
-.main__catalog-list-item-commercial:last-child:hover {
-	background-size: 265%;
+	border-inline-start: 1px solid #00000048;
+	border-inline-end: none;
 }
 
 /* Companies */
@@ -305,8 +172,7 @@
 	margin-block-start: clamp(1.875rem, 1.5716rem + 1.2945vw, 3.125rem);
 
 	display: flex;
-	justify-content: center;
-	gap: 40px;
+	justify-content: space-between;
 }
 
 .main__company {
@@ -314,6 +180,7 @@
 	padding-inline: 50px;
 
 	max-inline-size: 100%;
+	inline-size: 48%;
 
 	display: flex;
 	justify-content: center;
@@ -333,7 +200,7 @@
 
 .main__company-image {
 	max-inline-size: clamp(7.8125rem, 6.6748rem + 4.8544vw, 12.5rem);
-	max-block-size: 75px;
+	max-block-size: clamp(3.125rem, 2.7458rem + 1.6181vw, 4.6875rem);;
 }
 
 .main__company-textes {
@@ -342,7 +209,7 @@
 }
 
 .main__company-description {
-	word-wrap: break-word;
+	font-size: clamp(0.75rem, 0.568rem + 0.7767vw, 1.5rem);
 }
 
 .main__company:hover {

@@ -17,6 +17,7 @@
 
 .footer__logo-link {
 	padding-inline: 0;
+	border: none;
 
 	transition: transform 0.25s ease;
 }
@@ -235,7 +236,12 @@
 }
 
 .footer__bottom * {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
 	color: var(--silent-color);
-
 	font-size: 11px;
 }

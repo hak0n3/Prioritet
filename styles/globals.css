@@ -1,3 +1,19 @@
+/* Tests */
+
+* {
+	-webkit-tap-highlight-color: transparent;
+}
+
+li:active ul {
+	background: transparent;
+	color: #000;	
+}
+
+li:hover ul {
+	background: transparent;
+	color: inherit;
+}
+
 /* Globals */
 
 html {

@@ -282,18 +282,12 @@
 	gap: 5vw;
 
 	font-size: var(--par-font-size);
-
-	-webkit-appearance: none;
-	appearance: none;
 }
 
 .burger__links-list-item {
 	opacity: 0.75;
 
 	transition: transform 0.25s ease, opacity 0.25s ease;
-
-	-webkit-appearance: none;
-	appearance: none;
 }
 
 .burger__links-list-item:hover {
@@ -315,14 +309,13 @@
 	border: none;
 
 	font-family: inherit;
-
-	-webkit-appearance: none;
-	appearance: none;
+	color: #000;
 }
 
 .burger__link-btn .burger__link {
 	font-size: inherit;
 	opacity: 0.75;
+	background: #fff;
 }
 
 .burger__link-btn .burger__link::after {
@@ -359,9 +352,6 @@
 	text-align: center;
 
 	transform: scale(0.95);
-
-	-webkit-appearance: none;
-	appearance: none;
 }
 
 .burger__country-house-list {

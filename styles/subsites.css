@@ -1,0 +1,8 @@
+.header {
+    background: none;
+    block-size: auto;
+}
+
+.header .blackout {
+    display: none;
+}

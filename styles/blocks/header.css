@@ -169,7 +169,11 @@
 	border-bottom: 1px solid #00000048;
 	opacity: 0.9;
 }
+
 .header__marquee span {
+	-webkit-appearance: none;
+	appearance: none;
+
 	padding-left: 100%;
 
 	display: inline-block;

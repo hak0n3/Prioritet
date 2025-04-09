@@ -2,478 +2,498 @@
 <html lang="ru">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<title>Приоритет | Главная</title>
-	<link rel="shortcut icon" href="./images/icon.ico" sizes="any">
-	<link rel="shortcut icon" href="./images/icon.svg" type="image/svg+xml">
-	<link rel="apple-touch-icon" href="./images/icon.png">
-	<link rel="stylesheet" href="./styles/normalize.css">
-	<link rel="stylesheet" href="./styles/fonts.css">
-	<link rel="stylesheet" href="./styles/variables.css">
-	<link rel="stylesheet" href="./styles/globals.css">
-	<link rel="stylesheet" href="./styles/blocks/header.css">
-	<link rel="stylesheet" href="./styles/blocks/main.css">
-	<link rel="stylesheet" href="./styles/blocks/footer.css">
-	<link rel="stylesheet" href="./styles/animations.css">
-	<link rel="stylesheet" href="./styles/anim-elements/checkmark.css">
-	<link rel="stylesheet" href="./styles/medias.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Приоритет | Главная</title>
+  <link rel="shortcut icon" href="./images/icon.ico" sizes="any">
+  <link rel="shortcut icon" href="./images/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./images/icon.png">
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="./styles/fonts.css">
+  <link rel="stylesheet" href="./styles/variables.css">
+  <link rel="stylesheet" href="./styles/globals.css">
+  <link rel="stylesheet" href="./styles/blocks/header.css">
+  <link rel="stylesheet" href="./styles/blocks/main.css">
+  <link rel="stylesheet" href="./styles/blocks/footer.css">
+  <link rel="stylesheet" href="./styles/animations.css">
+  <link rel="stylesheet" href="./styles/anim-elements/checkmark.css">
+  <link rel="stylesheet" href="./styles/medias.css">
 </head>
 
 <body class="body">
-	<div class="backform">
-		<div class="backform-textes">
-			<h2 class="backform__title">Форма связи</h2>
-			<div class="backform-cross"></div>
-			<p class="backform-description">Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время, ответит
-				интересующие на все вопросы и поможет даже в самых сложных случаях! </p>
-		</div>
-		<form id="backform-id" onsubmit="return false" class="backform-container" action="./data/send.php" method="post">
-			<span>Как удобнее общаться?</span>
-			<label for="phone" class="backform-radio-label">
-				<input id="phone" value="phone" type="radio" name="contact" class="backform-radio visually-hidden" checked>
-				<span></span>
-				По телефону</label>
-			<label for="telegram" class="backform-radio-label">
-				<input id="telegram" value="telegram" type="radio" name="contact" class="backform-radio visually-hidden">
-				<span></span>
-				Чат в Telegram
-			</label>
-			<label for="whatsapp" class="backform-radio-label">
-				<input id="whatsapp" value="whatsapp" type="radio" name="contact" class="backform-radio visually-hidden">
-				<span></span>
-				Чат в Whatsapp
-			</label>
+  <div class="backform">
+    <div class="backform-textes">
+      <h2 class="backform__title">Форма связи</h2>
+      <div class="backform-cross"></div>
+      <p class="backform-description">Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время, ответит
+        интересующие на все вопросы и поможет даже в самых сложных случаях! </p>
+    </div>
+    <form id="backform-id" onsubmit="return false" class="backform-container" action="./data/send.php" method="post">
+      <span>Как удобнее общаться?</span>
+      <label for="phone" class="backform-radio-label">
+        <input id="phone" value="phone" type="radio" name="contact" class="backform-radio visually-hidden" checked>
+        <span></span>
+        По телефону</label>
+      <label for="telegram" class="backform-radio-label">
+        <input id="telegram" value="telegram" type="radio" name="contact" class="backform-radio visually-hidden">
+        <span></span>
+        Чат в Telegram
+      </label>
+      <label for="whatsapp" class="backform-radio-label">
+        <input id="whatsapp" value="whatsapp" type="radio" name="contact" class="backform-radio visually-hidden">
+        <span></span>
+        Чат в Whatsapp
+      </label>
 
-			<label class="visually-hidden" for="backform__name">Ваше имя</label>
-			<input type="text" value="" name="name" class="backform__input input" id="backform__name" placeholder="Ваше имя"
-				required autocomplete="name">
-			<label class="visually-hidden" for="backform__tel">Телефонный номер</label>
-			<input type="tel" value="" name="tel" class="backform__input input" id="backform__tel"
-				placeholder="+7 (123) 456-78-90" required autocomplete="tel">
+      <label class="visually-hidden" for="backform__name">Ваше имя</label>
+      <input type="text" value="" name="name" class="backform__input input" id="backform__name" placeholder="Ваше имя"
+        required autocomplete="name">
+      <label class="visually-hidden" for="backform__tel">Телефонный номер</label>
+      <input type="tel" value="" name="tel" class="backform__input input" id="backform__tel"
+        placeholder="+7 (123) 456-78-90" required autocomplete="tel">
 
-			<button type="submit" class="backform__button button">Отправить заявку</button>
-		</form>
-		<p class="backform__secured">Обращаясь к нам вы получаете не только профессиональную работу, но и абсолютную
-			конфиденциальность информации!</p>
-	</div>
-	<div class="form__success">
-		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 214 214" class="check-circle">
-			<g fill="none" stroke="currentColor" stroke-width="2">
-				<circle class="semi-transparent" fill="currentColor" opacity="0.15" cx="107" cy="107" r="72"></circle>
-				<circle class="colored" fill="currentColor" cx="107" cy="107" r="72" opacity="0.8"></circle>
-				<polyline stroke="#fff" stroke-width="10" points="73.5,107.8 93.7,127.9 142.2,79.4"
-					style="stroke-dasharray: 50%, 50%; stroke-dashoffset: 100%" />
-			</g>
-		</svg>
-	</div>
-	<div class="backform__blackout blackout"></div>
-	<div class="burger">
-		<span class="burger__cross">
-			<img src="./svg/cross.svg" alt="Закрыть меню" class="burger__cross-img">
-		</span>
-		<ul class="burger__links-list">
-			<li class="burger__links-list-item">
-				<a href="#about-us" class="burger__link burger__forwarding">О компании</a>
-			</li>
-			<li class="burger__links-list-item burger__link-listing burger__link-btn burger-country-btn">
-				<button type="button" class="burger__link">Для загородных домов</button>
-				<ul class="burger__list burger__country-house-list">
-					<li class="burger__list-item burger__country-house-list-item">
-						<a href="./country/allkey/index.html" class="burger__list-link burger__country-house-link">Все системы "под
-							ключ"</a>
-					</li>
-					<li class="burger__list-item burger__country-house-list-item">
-						<a href="./country/boilers/index.html" class="burger__list-link burger__country-house-link">Котельное оборудование</a>
-					</li>
-					<li class="burger__list-item burger__country-house-list-item">
-						<a href="./country/automatics/index.html" class="burger__list-link burger__country-house-link">Автоматика</a>
-					</li>
-					<li class="burger__list-item burger__country-house-list-item">
-						<a href="./country/water-supply/index.html" class="burger__list-link burger__country-house-link">Водоснабжение</a>
-					</li>
-					<li class="burger__list-item burger__country-house-list-item">
-						<a href="./country/water-disposal/index.html" class="burger__list-link burger__country-house-link">Водоотведение</a>
-					</li>
-					<li class="burger__list-item burger__country-house-list-item">
-						<a href="./country/warm-floors/index.html" class="burger__list-link burger__country-house-link">Тёплые полы</a>
-					</li>
-					<li class="burger__list-item burger__country-house-list-item">
-						<a href="./country/wells-pumps/index.html" class="burger__list-link burger__country-house-link">Обустройство скважин, насосов</a>
-					</li>
-					<li class="burger__list-item burger__country-house-list-item">
-						<a href="./country/electrics/index.html" class="burger__list-link burger__country-house-link">Электрика</a>
-					</li>
-					<li class="burger__list-item burger__country-house-list-item">
-						<a href="./country/proecting/index.html" class="burger__list-link burger__country-house-link">Проектирование</a>
-					</li>
-				</ul>
-			</li>
-			<li class="burger__links-list-item burger__link-listing burger__link-btn burger-commercial-btn">
-				<button type="button" class="burger__link">Для коммерческих помещей</button>
-				<ul class="burger__list burger__commercial-space-list">
-					<li class="burger__list-item burger__commercial-space-list-item">
-						<a href="./commercial/engineering/index.html" class="burger__list-link burger__commercial-space-link">Инженерные
-							системы</a>
-					</li>
-					<li class="burger__list-item burger__commercial-space-list-item">
-						<a href="./commercial/heatvents/index.html" class="burger__list-link burger__commercial-space-link">Тепловентиляторы и
-							завесы</a>
-					</li>
-					<li class="burger__list-item burger__commercial-space-list-item">
-						<a href="./commercial/boilers/index.html" class="burger__list-link burger__commercial-space-link">Котельные</a>
-					</li>
-					<li class="burger__list-item burger__commercial-space-list-item">
-						<a href="./commercial/electrics/index.html" class="burger__list-link burger__commercial-space-link">Электромонтажные
-							работы</a>
-					</li>
-					<li class="burger__list-item burger__commercial-space-list-item">
-						<a href="./commercial/proecting/index.html" class="burger__list-link burger__commercial-space-link">Проектирование</a>
-					</li>
-				</ul>
-			</li>
-			<li class="burger__links-list-item">
-				<a href="#projects" class="burger__link burger__forwarding">Наши работы</a>
-			</li>
-		</ul>
-		<button class="burger__contact-button main__scheme-backform-btn form-opener">Оставить заявку</button>
-	</div>
-	<header class="header" id="header">
-		<div class="header__top">
-			<div class="header__burger-cont">
-				<img src="./svg/burger.svg" alt="Меню сайта" class="header__burger">
-			</div>
-			<div class="header__links">
-				<a href="#" class="header__logo-link logo-link">
-					<img src="./images/logo.png" alt="Лого Импакт" class="header__logo">
-				</a>
-				<nav class="header__navigation">
-					<ul class="header__nav-list">
-						<li class="header__nav-list-item">
-							<a href="#about-us" class="header__nav-link">О компании</a>
-						</li>
-						<li class="header__nav-list-item country-house">
-							<a href="#" class="header__nav-link">Для загородных домов</a>
-							<div class="country-house__container">
-								<ul class="nav-link__list">
-									<li class="country-house__list-item">
-										<a href="./country/allkey/index.html" class="nav-link__list-link">Все системы "под ключ"</a>
-									</li>
-									<li class="country-house__list-item">
-										<a href="./country/boilers/index.html" class="nav-link__list-link">Котельное оборудование</a>
-									</li>
-									<li class="country-house__list-item">
-										<a href="./country/automatics/index.html" class="nav-link__list-link">Автоматика</a>
-									</li>
-									<li class="country-house__list-item">
-										<a href="./country/water-supply/index.html" class="nav-link__list-link">Водоснабжение</a>
-									</li>
-									<li class="country-house__list-item">
-										<a href="./country/water-disposal/index.html" class="nav-link__list-link">Водоотведение</a>
-									</li>
-									<li class="country-house__list-item">
-										<a href="./country/warm-floors/index.html" class="nav-link__list-link">Тёплые полы</a>
-									</li>
-									<li class="country-house__list-item">
-										<a href="./country/wells-pumps/index.html" class="nav-link__list-link">Обустройство скважин, насосов</a>
-									</li>
-									<li class="country-house__list-item">
-										<a href="./country/electrics/index.html" class="nav-link__list-link">Электрика</a>
-									</li>
-									<li class="country-house__list-item">
-										<a href="./country/proecting/index.html" class="nav-link__list-link">Проектирование</a>
-									</li>
-								</ul>
-							</div>
-						</li>
-						<li class="header__nav-list-item commercial-space">
-							<a href="#" class="header__nav-link">Для коммерческих помещений</a>
-							<div class="commercial-space__container">
-								<ul class="nav-link__list">
-									<li class="commercial-house__list-item">
-										<a href="./commercial/engineering/index.html" class="nav-link__list-link">Инженерные системы</a>
-									</li>
-									<li class="commercial-house__list-item">
-										<a href="./commercial/heatvents/index.html" class="nav-link__list-link">Тепловентиляторы и завесы</a>
-									</li>
-									<li class="commercial-house__list-item">
-										<a href="./commercial/boilers/index.html" class="nav-link__list-link">Котельные</a>
-									</li>
-									<li class="commercial-house__list-item">
-										<a href="./commercial/electrics/index.html" class="nav-link__list-link">Электромонтажные работы</a>
-									</li>
-									<li class="commercial-house__list-item">
-										<a href="./commercial/proecting/index.html" class="nav-link__list-link">Проектирование</a>
-									</li>
-								</ul>
-							</div>
-						</li>
-						<li class="header__nav-list-item">
-							<a href="#projects" class="header__nav-link">Наши работы</a>
-						</li>
-					</ul>
-				</nav>
-			</div>
-			<button type="button" class="header__consultation-button button form-opener">
-				Отправить заявку на расчёт
-			</button>
-			<button type="button" class="header__calling form-opener">
-				<img src="./svg/contact-us.svg" alt="Позвонить нам" class="header__calling-image">
-			</button>
-			<marquee class="header__marquee" direction="left" scrollamount="15">Монтажные работы для любых целей | пос. Лукаши, ул. Заводская 18А | prioritet.contact@gmail.com | +7 (812) 679-70-00</marquee>
-		</div>
-		<div class="header__main">
-			<h1 class="header__title">Монтаж и проектирование <br> инженерных систем<br>для частных домов<br>и
-				коммерческих
-				объектов</h1>
-		</div>
-		<div class="header__bottom">
-			<ul class="header__facts-list">
-				<li class="header__facts-item active__fact">
-					<img src="./svg/headerSvgs/clocks.svg" alt="Иконка факта" class="header__fact-image svg">
-					<p class="header__fact">Непрерывная работа с N года</p>
-				</li>
-				<li class="header__facts-item">
-					<img src="./svg/headerSvgs/docs.svg" alt="Иконка факта" class="header__fact-image svg">
-					<p class="header__fact">Вся продукция сертифицирована</p>
-				</li>
-				<li class="header__facts-item">
-					<img src="./svg/headerSvgs/control.svg" alt="Иконка факта" class="header__fact-image svg">
-					<p class="header__fact">Контроль качества на всех этапах</p>
-				</li>
-				<li class="header__facts-item">
-					<img src="./svg/headerSvgs/optimal.svg" alt="Иконка факта" class="header__fact-image svg">
-					<p class="header__fact">Оперативное производство</p>
-				</li>
-			</ul>
-		</div>
-		<div class="blackout"></div>
-	</header>
-	<main class="main">
-		<section class="main__scheme">
-			<h2 class="main__scheme-title">Схема работы</h2>
-			<ul class="main__step-list">
-				<li class="main__step-list-item active__step">
-					<span class="main__step-label">01</span>
-					<h3 class="main__step-title">Знакомство</h3>
-					<p class="main__step-description">Вы отправляете заявку на расчёт, мы запрашиваем все необходимые
-						данные.
-						Фиксируем все пожелания в проекте.</p>
-					<button class="main__scheme-backform-btn form-opener">Оставить заявку</button>
-				</li>
-				<li class="main__step-list-item">
-					<span class="main__step-label">02</span>
-					<h3 class="main__step-title">Формирование</h3>
-					<p class="main__step-description">Формируем проект или монтажные схемы, составляем полный расчёт по
-						работам и
-						материалам, подготавливаем договор.</p>
-				</li>
-				<li class="main__step-list-item">
-					<span class="main__step-label">03</span>
-					<h3 class="main__step-title">Выполнение работ</h3>
-					<p class="main__step-description">Организовываем доставку материалов и оборудования. Выполняем
-						монтажные
-						работы, производим пуско-наладочные работы и настройку установленного оборудования.</p>
-				</li>
-				<li class="main__step-list-item">
-					<span class="main__step-label">04</span>
-					<h3 class="main__step-title">Заключение</h3>
-					<p class="main__step-description">Выполняем проверку всех установленных коммуникаций и проводим
-						внутренюю
-						приёмку. Убираем мусор, вывозим инструменты, Фиксируем объем выполненных работ и сдаём проект.
-					</p>
-				</li>
-			</ul>
-			<div class="main__scheme-arrows"> <button type="button" class="main__scheme-left main__scheme-stepping button">
-					<img src="./svg/mainSvgs/left.svg" alt="Предыдущий пункт схемы" class="main__scheme-arrow">
-				</button>
-				<button type="button" class="main__scheme-right main__scheme-stepping button">
-					<img src="./svg/mainSvgs/right.svg" alt="Следующий пункт схемы" class="main__scheme-arrow">
-				</button>
-			</div>
-		</section>
-		<section class="main__projects" id="projects">
-			<h2 class="main__projects-title">Наши работы</h2>
-			<ul class="main__projects-list">
-				<li class="main__projects-list-item">
-					<img src="./images/cage.jpg" alt="Фотография сделанного вольера" class="main__project-image">
-					<div class="main__project-text-content">
-						<h3 class="main__project-title">Заголовок проекта</h3>
-						<p class="main__project-description">Краткое описание</p>
-					</div>
-				</li>
-				<li class="main__projects-list-item">
-					<img src="./images/garage.jpg" alt="Фотография сделанного гаража" class="main__project-image">
-					<div class="main__project-text-content">
-						<h3 class="main__project-title">Заголовок проекта</h3>
-						<p class="main__project-description">Краткое описание</p>
-					</div>
-				</li>
-				<li class="main__projects-list-item">
-					<img src="./images/white-black-house.jpg" alt="Фотография построенного дома" class="main__project-image">
-					<div class="main__project-text-content">
-						<h3 class="main__project-title">Заголовок проекта</h3>
-						<p class="main__project-description">Краткое описание</p>
-					</div>
-				</li>
-				<li class="main__projects-list-item">
-					<img src="./images/enter.jpg" alt="Фотография устройства входной группы" class="main__project-image">
-					<div class="main__project-text-content">
-						<h3 class="main__project-title">Заголовок проекта</h3>
-						<p class="main__project-description">Краткое описание</p>
-					</div>
-				</li>
-				<li class="main__projects-list-item">
-					<img src="./images/roof.jpg" alt="Фотография сделанной фальцевой кровли" class="main__project-image">
-					<div class="main__project-text-content">
-						<h3 class="main__project-title">Заголовок проекта</h3>
-						<p class="main__project-description">Краткое описание</p>
-					</div>
-				</li>
-				<li class="main__projects-list-item">
-					<img src="./images/room.jpg" alt="Фотография сделанной комнаты" class="main__project-image">
-					<div class="main__project-text-content">
-						<h3 class="main__project-title">Заголовок проекта</h3>
-						<p class="main__project-description">Краткое описание</p>
-					</div>
-				</li>
-			</ul>
-		</section>
-		<section class="main__companies" id="companies">
-			<h2 class="main__companies-title">Собственные компании</h2>
-			<div class="main__companies-container">
-				<a href="#header" class="main__company">
-					<img src="./images/logo.png" alt="Инжерно-монтажные услуги Приоритет" class="main__company-image">
-					<div class="main__company-textes">
-						<h3 class="main__company-title">Приоритет</h3>
-						<p class="main__company-description">Описание приоритет</p>
-					</div>
-				</a>
-				<a href="./sdf" class="main__company">
-					<img src="./images/aib-logo.png" alt="Магазин АиБ" class="main__company-image">
-					<div class="main__company-textes">
-						<h3 class="main__company-title">Магазин АиБ</h3>
-						<p class="main__company-description">Способы поставки материалов и оборудования, комплектация объектов</p>
-					</div>
-				</a>
-			</div>
-		</section>
-		<section class="main__about-us" id="about-us">
-			<h2 class="main__about-us-title">О компании</h2>
-			<div class="main__about-us-context">
-				<img src="./images/OurObject.jpg" alt="Наш объект" class="main__about-us-image">
-				<div class="main__about-us-textes">
-					<h3 class="main__about-context-title">Мы - эксперты в области монтажа и проектирования</h3>
-					<p class="main__about-context-description">Успех нашей команды заключается в многолетнем опыте в
-						области
-						монтажа инженерных систем, строительстве и индивидуальном подходе к каждому клиенту. </p>
-					<p class="main__about-context-description">На нашем счету сотни метров протянутых труб, километры
-						уложенных
-						теплых полов, тысячи кубов проведенной в
-						дома горячей и холодной воды, тысячи квадратных метров уюта и тепла.<br>
-						Наша миссия - доступный комфорт в каждый дом! <br>
-						Наши ценности – семья, честность и безопасность. <br>
-						Наша гордость – благодарные и довольные клиенты. <br>
-					</p>
-					<p class="main__about-context-description">
-						Именно поэтому мы ответственно подходим к поставленным задачам и качественно выполняем свою
-						работу.
-						Именно поэтому мы сотрудничаем только с проверенными поставщиками и используем материалы
-						высокого класса.
-					</p>
-				</div>
-			</div>
-		</section>
-	</main>
-	<footer class="footer">
-		<div class="footer__top">
-			<a href="#" class="footer__logo-link logo-link">
-				<img src="./images/logo.png" alt="Лого Импакт" class="header__logo">
-			</a>
-			<a href="tel:+78126797000" class="footer__number">+7 (812) 679-70-00</a>
-			<div class="footer__contacts">
-				<div class="footer__props">
-					<address class="footer__address">пос. Лукаши, ул. Заводская 18А</address>
-					<a href="mailto:prioritet.contact@gmail.com" class="footer__email">prioritet.contact@gmail.com</a>
-				</div>
-				<a href="https://t.me/zagorodnoe_stroitelstvo" class="footer__tg footer__social" target="_blank">Мы
-					в Telegram</a>
-			</div>
-		</div>
-		<div class="footer__main">
-			<div class="footer__country-house-container">
-				<h2 class="footer__country-house-title">Для загородных домов</h2>
-				<ul class="footer__country-house-list footer__links-list">
-					<li class="footer__country-house-list-item">
-						<a href="./country/allkey/index.html" class="footer__country-house-link">Все системы "под ключ"</a>
-					</li>
-					<li class="footer__country-house-list-item">
-						<a href="./country/boilers/index.html" class="footer__country-house-link">Котельное оборудование</a>
-					</li>
-					<li class="footer__country-house-list-item">
-						<a href="./country/automatics/index.html" class="footer__country-house-link">Автоматика</a>
-					</li>
-					<li class="footer__country-house-list-item">
-						<a href="./country/water-supply/index.html" class="footer__country-house-link">Водоснабжение</a>
-					</li>
-					<li class="footer__country-house-list-item">
-						<a href="./country/water-disposal/index.html" class="footer__country-house-link">Водоотведение</a>
-					</li>
-					<li class="footer__country-house-list-item">
-						<a href="./country/warm-floors/index.html" class="footer__country-house-link">Тёпные полы</a>
-					</li>
-					<li class="footer__country-house-list-item">
-						<a href="./country/wells-pumps/index.html" class="footer__country-house-link">Обустройство скважин, насосов</a>
-					</li>
-					<li class="footer__country-house-list-item">
-						<a href="./country/electrics/index.html" class="footer__country-house-link">Электрика</a>
-					</li>
-					<li class="footer__country-house-list-item">
-						<a href="./country/proecting/index.html" class="footer__country-house-link">Проектирование</a>
-					</li>
-				</ul>
-			</div>
-			<div class="footer__commercial-space-container">
-				<h2 class="footer__commercial-space-title">Для коммерческих помещений</h2>
-				<ul class="footer__commercial-space-list footer__links-list">
-					<li class="footer__commercial-space-list-item">
-						<a href="./commercial/engineering/index.html" class="footer__commercial-space-link">Инженерные системы</a>
-					</li>
-					<li class="footer__commercial-space-list-item">
-						<a href="./commercial/heatvents/index.html" class="footer__commercial-space-link">Тепловентиляторы и завесы</a>
-					</li>
-					<li class="footer__commercial-space-list-item">
-						<a href="./commercial/boilers/index.html" class="footer__commercial-space-link">Котельные</a>
-					</li>
-					<li class="footer__commercial-space-list-item">
-						<a href="./commercial/electrics/index.html" class="footer__commercial-space-link">Электромонтажные работы</a>
-					</li>
-					<li class="footer__commercial-space-list-item">
-						<a href="./commercial/proecting/index.html" class="footer__commercial-space-link">Проектирование</a>
-					</li>
-				</ul>
-			</div>
-			<div class="footer__companies">
-				<h2 class="footer__companies-title">Собственные компании</h2>
-				<ul class="footer__companies-list">
-					<li class="footer__companies-list-item">
-						<a href="#" class="footer__company">Приоритет</a>
-					</li>
-					<li class="footer__companies-list-item">
-						<a href="/sdf" class="footer__company">Магазин АиБ</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<div class="footer__bottom">
-			<p class="footer__perms">© 2025 «Приоритет». Все права защищены.</p>
-		</div>
-	</footer>
-	<script src="./scripts/facts.js"></script>
-	<script src="./scripts/contact.js"></script>
-	<script src="./scripts/scheme.js"></script>
-	<script src="./scripts/top-links.js"></script>
-	<script src="./scripts/burger.js"></script>
+      <button type="submit" class="backform__button button">Отправить заявку</button>
+    </form>
+    <p class="backform__secured">Обращаясь к нам вы получаете не только профессиональную работу, но и абсолютную
+      конфиденциальность информации!</p>
+  </div>
+  <div class="form__success">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 214 214" class="check-circle">
+      <g fill="none" stroke="currentColor" stroke-width="2">
+        <circle class="semi-transparent" fill="currentColor" opacity="0.15" cx="107" cy="107" r="72"></circle>
+        <circle class="colored" fill="currentColor" cx="107" cy="107" r="72" opacity="0.8"></circle>
+        <polyline stroke="#fff" stroke-width="10" points="73.5,107.8 93.7,127.9 142.2,79.4"
+          style="stroke-dasharray: 50%, 50%; stroke-dashoffset: 100%" />
+      </g>
+    </svg>
+  </div>
+  <div class="backform__blackout blackout"></div>
+  <div class="burger">
+    <span class="burger__cross">
+      <img src="./svg/cross.svg" alt="Закрыть меню" class="burger__cross-img">
+    </span>
+    <ul class="burger__links-list">
+      <li class="burger__links-list-item">
+        <a href="#about-us" class="burger__link burger__forwarding">О компании</a>
+      </li>
+      <li class="burger__links-list-item burger__link-listing burger__link-btn burger-country-btn">
+        <button type="button" class="burger__link">Для загородных домов</button>
+        <ul class="burger__list burger__country-house-list">
+          <li class="burger__list-item burger__country-house-list-item">
+            <a href="./country/allkey/index.html" class="burger__list-link burger__country-house-link">Все системы "под
+              ключ"</a>
+          </li>
+          <li class="burger__list-item burger__country-house-list-item">
+            <a href="./country/boilers/index.html" class="burger__list-link burger__country-house-link">Котельное
+              оборудование</a>
+          </li>
+          <li class="burger__list-item burger__country-house-list-item">
+            <a href="./country/automatics/index.html"
+              class="burger__list-link burger__country-house-link">Автоматика</a>
+          </li>
+          <li class="burger__list-item burger__country-house-list-item">
+            <a href="./country/water-supply/index.html"
+              class="burger__list-link burger__country-house-link">Водоснабжение</a>
+          </li>
+          <li class="burger__list-item burger__country-house-list-item">
+            <a href="./country/water-disposal/index.html"
+              class="burger__list-link burger__country-house-link">Водоотведение</a>
+          </li>
+          <li class="burger__list-item burger__country-house-list-item">
+            <a href="./country/warm-floors/index.html" class="burger__list-link burger__country-house-link">Тёплые
+              полы</a>
+          </li>
+          <li class="burger__list-item burger__country-house-list-item">
+            <a href="./country/wells-pumps/index.html" class="burger__list-link burger__country-house-link">Обустройство
+              скважин, насосов</a>
+          </li>
+          <li class="burger__list-item burger__country-house-list-item">
+            <a href="./country/electrics/index.html" class="burger__list-link burger__country-house-link">Электрика</a>
+          </li>
+          <li class="burger__list-item burger__country-house-list-item">
+            <a href="./country/proecting/index.html"
+              class="burger__list-link burger__country-house-link">Проектирование</a>
+          </li>
+        </ul>
+      </li>
+      <li class="burger__links-list-item burger__link-listing burger__link-btn burger-commercial-btn">
+        <button type="button" class="burger__link">Для коммерческих помещей</button>
+        <ul class="burger__list burger__commercial-space-list">
+          <li class="burger__list-item burger__commercial-space-list-item">
+            <a href="./commercial/engineering/index.html"
+              class="burger__list-link burger__commercial-space-link">Инженерные
+              системы</a>
+          </li>
+          <li class="burger__list-item burger__commercial-space-list-item">
+            <a href="./commercial/heatvents/index.html"
+              class="burger__list-link burger__commercial-space-link">Тепловентиляторы и
+              завесы</a>
+          </li>
+          <li class="burger__list-item burger__commercial-space-list-item">
+            <a href="./commercial/boilers/index.html"
+              class="burger__list-link burger__commercial-space-link">Котельные</a>
+          </li>
+          <li class="burger__list-item burger__commercial-space-list-item">
+            <a href="./commercial/electrics/index.html"
+              class="burger__list-link burger__commercial-space-link">Электромонтажные
+              работы</a>
+          </li>
+          <li class="burger__list-item burger__commercial-space-list-item">
+            <a href="./commercial/proecting/index.html"
+              class="burger__list-link burger__commercial-space-link">Проектирование</a>
+          </li>
+        </ul>
+      </li>
+      <li class="burger__links-list-item">
+        <a href="#projects" class="burger__link burger__forwarding">Наши работы</a>
+      </li>
+    </ul>
+    <button class="burger__contact-button main__scheme-backform-btn form-opener">Оставить заявку</button>
+  </div>
+  <header class="header" id="header">
+    <div class="header__top">
+      <div class="header__burger-cont">
+        <img src="./svg/burger.svg" alt="Меню сайта" class="header__burger">
+      </div>
+      <div class="header__links">
+        <a href="#" class="header__logo-link logo-link">
+          <img src="./images/logo.png" alt="Лого Импакт" class="header__logo">
+        </a>
+        <nav class="header__navigation">
+          <ul class="header__nav-list">
+            <li class="header__nav-list-item">
+              <a href="#about-us" class="header__nav-link">О компании</a>
+            </li>
+            <li class="header__nav-list-item country-house">
+              <a href="#" class="header__nav-link">Для загородных домов</a>
+              <div class="country-house__container">
+                <ul class="nav-link__list">
+                  <li class="country-house__list-item">
+                    <a href="./country/allkey/index.html" class="nav-link__list-link">Все системы "под ключ"</a>
+                  </li>
+                  <li class="country-house__list-item">
+                    <a href="./country/boilers/index.html" class="nav-link__list-link">Котельное оборудование</a>
+                  </li>
+                  <li class="country-house__list-item">
+                    <a href="./country/automatics/index.html" class="nav-link__list-link">Автоматика</a>
+                  </li>
+                  <li class="country-house__list-item">
+                    <a href="./country/water-supply/index.html" class="nav-link__list-link">Водоснабжение</a>
+                  </li>
+                  <li class="country-house__list-item">
+                    <a href="./country/water-disposal/index.html" class="nav-link__list-link">Водоотведение</a>
+                  </li>
+                  <li class="country-house__list-item">
+                    <a href="./country/warm-floors/index.html" class="nav-link__list-link">Тёплые полы</a>
+                  </li>
+                  <li class="country-house__list-item">
+                    <a href="./country/wells-pumps/index.html" class="nav-link__list-link">Обустройство скважин,
+                      насосов</a>
+                  </li>
+                  <li class="country-house__list-item">
+                    <a href="./country/electrics/index.html" class="nav-link__list-link">Электрика</a>
+                  </li>
+                  <li class="country-house__list-item">
+                    <a href="./country/proecting/index.html" class="nav-link__list-link">Проектирование</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="header__nav-list-item commercial-space">
+              <a href="#" class="header__nav-link">Для коммерческих помещений</a>
+              <div class="commercial-space__container">
+                <ul class="nav-link__list">
+                  <li class="commercial-house__list-item">
+                    <a href="./commercial/engineering/index.html" class="nav-link__list-link">Инженерные системы</a>
+                  </li>
+                  <li class="commercial-house__list-item">
+                    <a href="./commercial/heatvents/index.html" class="nav-link__list-link">Тепловентиляторы и
+                      завесы</a>
+                  </li>
+                  <li class="commercial-house__list-item">
+                    <a href="./commercial/boilers/index.html" class="nav-link__list-link">Котельные</a>
+                  </li>
+                  <li class="commercial-house__list-item">
+                    <a href="./commercial/electrics/index.html" class="nav-link__list-link">Электромонтажные работы</a>
+                  </li>
+                  <li class="commercial-house__list-item">
+                    <a href="./commercial/proecting/index.html" class="nav-link__list-link">Проектирование</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="header__nav-list-item">
+              <a href="#projects" class="header__nav-link">Наши работы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <button type="button" class="header__consultation-button button form-opener">
+        Отправить заявку на расчёт
+      </button>
+      <button type="button" class="header__calling form-opener">
+        <img src="./svg/contact-us.svg" alt="Позвонить нам" class="header__calling-image">
+      </button>
+      <div class="header__marquee">
+        <span>Монтажные работы для любых целей | пос. Лукаши, ул. Заводская 18А | prioritet.contact@gmail.com | +7
+          (812) 679-70-00</span>
+      </div>
+    </div>
+    <div class="header__main">
+      <h1 class="header__title">Монтаж и проектирование <br> инженерных систем<br>для частных домов<br>и
+        коммерческих
+        объектов</h1>
+    </div>
+    <div class="header__bottom">
+      <ul class="header__facts-list">
+        <li class="header__facts-item active__fact">
+          <img src="./svg/headerSvgs/clocks.svg" alt="Иконка факта" class="header__fact-image svg">
+          <p class="header__fact">Непрерывная работа с N года</p>
+        </li>
+        <li class="header__facts-item">
+          <img src="./svg/headerSvgs/docs.svg" alt="Иконка факта" class="header__fact-image svg">
+          <p class="header__fact">Вся продукция сертифицирована</p>
+        </li>
+        <li class="header__facts-item">
+          <img src="./svg/headerSvgs/control.svg" alt="Иконка факта" class="header__fact-image svg">
+          <p class="header__fact">Контроль качества на всех этапах</p>
+        </li>
+        <li class="header__facts-item">
+          <img src="./svg/headerSvgs/optimal.svg" alt="Иконка факта" class="header__fact-image svg">
+          <p class="header__fact">Оперативное производство</p>
+        </li>
+      </ul>
+    </div>
+    <div class="blackout"></div>
+  </header>
+  <main class="main">
+    <section class="main__scheme">
+      <h2 class="main__scheme-title">Схема работы</h2>
+      <ul class="main__step-list">
+        <li class="main__step-list-item active__step">
+          <span class="main__step-label">01</span>
+          <h3 class="main__step-title">Знакомство</h3>
+          <p class="main__step-description">Вы отправляете заявку на расчёт, мы запрашиваем все необходимые
+            данные.
+            Фиксируем все пожелания в проекте.</p>
+          <button class="main__scheme-backform-btn form-opener">Оставить заявку</button>
+        </li>
+        <li class="main__step-list-item">
+          <span class="main__step-label">02</span>
+          <h3 class="main__step-title">Формирование</h3>
+          <p class="main__step-description">Формируем проект или монтажные схемы, составляем полный расчёт по
+            работам и
+            материалам, подготавливаем договор.</p>
+        </li>
+        <li class="main__step-list-item">
+          <span class="main__step-label">03</span>
+          <h3 class="main__step-title">Выполнение работ</h3>
+          <p class="main__step-description">Организовываем доставку материалов и оборудования. Выполняем
+            монтажные
+            работы, производим пуско-наладочные работы и настройку установленного оборудования.</p>
+        </li>
+        <li class="main__step-list-item">
+          <span class="main__step-label">04</span>
+          <h3 class="main__step-title">Заключение</h3>
+          <p class="main__step-description">Выполняем проверку всех установленных коммуникаций и проводим
+            внутренюю
+            приёмку. Убираем мусор, вывозим инструменты, Фиксируем объем выполненных работ и сдаём проект.
+          </p>
+        </li>
+      </ul>
+      <div class="main__scheme-arrows"> <button type="button" class="main__scheme-left main__scheme-stepping button">
+          <img src="./svg/mainSvgs/left.svg" alt="Предыдущий пункт схемы" class="main__scheme-arrow">
+        </button>
+        <button type="button" class="main__scheme-right main__scheme-stepping button">
+          <img src="./svg/mainSvgs/right.svg" alt="Следующий пункт схемы" class="main__scheme-arrow">
+        </button>
+      </div>
+    </section>
+    <section class="main__projects" id="projects">
+      <h2 class="main__projects-title">Наши работы</h2>
+      <ul class="main__projects-list">
+        <li class="main__projects-list-item">
+          <img src="./images/cage.jpg" alt="Фотография сделанного вольера" class="main__project-image">
+          <div class="main__project-text-content">
+            <h3 class="main__project-title">Заголовок проекта</h3>
+            <p class="main__project-description">Краткое описание</p>
+          </div>
+        </li>
+        <li class="main__projects-list-item">
+          <img src="./images/garage.jpg" alt="Фотография сделанного гаража" class="main__project-image">
+          <div class="main__project-text-content">
+            <h3 class="main__project-title">Заголовок проекта</h3>
+            <p class="main__project-description">Краткое описание</p>
+          </div>
+        </li>
+        <li class="main__projects-list-item">
+          <img src="./images/white-black-house.jpg" alt="Фотография построенного дома" class="main__project-image">
+          <div class="main__project-text-content">
+            <h3 class="main__project-title">Заголовок проекта</h3>
+            <p class="main__project-description">Краткое описание</p>
+          </div>
+        </li>
+        <li class="main__projects-list-item">
+          <img src="./images/enter.jpg" alt="Фотография устройства входной группы" class="main__project-image">
+          <div class="main__project-text-content">
+            <h3 class="main__project-title">Заголовок проекта</h3>
+            <p class="main__project-description">Краткое описание</p>
+          </div>
+        </li>
+        <li class="main__projects-list-item">
+          <img src="./images/roof.jpg" alt="Фотография сделанной фальцевой кровли" class="main__project-image">
+          <div class="main__project-text-content">
+            <h3 class="main__project-title">Заголовок проекта</h3>
+            <p class="main__project-description">Краткое описание</p>
+          </div>
+        </li>
+        <li class="main__projects-list-item">
+          <img src="./images/room.jpg" alt="Фотография сделанной комнаты" class="main__project-image">
+          <div class="main__project-text-content">
+            <h3 class="main__project-title">Заголовок проекта</h3>
+            <p class="main__project-description">Краткое описание</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="main__companies" id="companies">
+      <h2 class="main__companies-title">Собственные компании</h2>
+      <div class="main__companies-container">
+        <a href="#header" class="main__company">
+          <img src="./images/logo.png" alt="Инжерно-монтажные услуги Приоритет" class="main__company-image">
+          <div class="main__company-textes">
+            <h3 class="main__company-title">Приоритет</h3>
+            <p class="main__company-description">Описание приоритет</p>
+          </div>
+        </a>
+        <a href="./sdf" class="main__company">
+          <img src="./images/aib-logo.png" alt="Магазин АиБ" class="main__company-image">
+          <div class="main__company-textes">
+            <h3 class="main__company-title">Магазин АиБ</h3>
+            <p class="main__company-description">Способы поставки материалов и оборудования, комплектация объектов</p>
+          </div>
+        </a>
+      </div>
+    </section>
+    <section class="main__about-us" id="about-us">
+      <h2 class="main__about-us-title">О компании</h2>
+      <div class="main__about-us-context">
+        <img src="./images/OurObject.jpg" alt="Наш объект" class="main__about-us-image">
+        <div class="main__about-us-textes">
+          <h3 class="main__about-context-title">Мы - эксперты в области монтажа и проектирования</h3>
+          <p class="main__about-context-description">Успех нашей команды заключается в многолетнем опыте в
+            области
+            монтажа инженерных систем, строительстве и индивидуальном подходе к каждому клиенту. </p>
+          <p class="main__about-context-description">На нашем счету сотни метров протянутых труб, километры
+            уложенных
+            теплых полов, тысячи кубов проведенной в
+            дома горячей и холодной воды, тысячи квадратных метров уюта и тепла.<br>
+            Наша миссия - доступный комфорт в каждый дом! <br>
+            Наши ценности – семья, честность и безопасность. <br>
+            Наша гордость – благодарные и довольные клиенты. <br>
+          </p>
+          <p class="main__about-context-description">
+            Именно поэтому мы ответственно подходим к поставленным задачам и качественно выполняем свою
+            работу.
+            Именно поэтому мы сотрудничаем только с проверенными поставщиками и используем материалы
+            высокого класса.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__top">
+      <a href="#" class="footer__logo-link logo-link">
+        <img src="./images/logo.png" alt="Лого Импакт" class="header__logo">
+      </a>
+      <a href="tel:+78126797000" class="footer__number">+7 (812) 679-70-00</a>
+      <div class="footer__contacts">
+        <div class="footer__props">
+          <address class="footer__address">пос. Лукаши, ул. Заводская 18А</address>
+          <a href="mailto:prioritet.contact@gmail.com" class="footer__email">prioritet.contact@gmail.com</a>
+        </div>
+        <a href="https://t.me/zagorodnoe_stroitelstvo" class="footer__tg footer__social" target="_blank">Мы
+          в Telegram</a>
+      </div>
+    </div>
+    <div class="footer__main">
+      <div class="footer__country-house-container">
+        <h2 class="footer__country-house-title">Для загородных домов</h2>
+        <ul class="footer__country-house-list footer__links-list">
+          <li class="footer__country-house-list-item">
+            <a href="./country/allkey/index.html" class="footer__country-house-link">Все системы "под ключ"</a>
+          </li>
+          <li class="footer__country-house-list-item">
+            <a href="./country/boilers/index.html" class="footer__country-house-link">Котельное оборудование</a>
+          </li>
+          <li class="footer__country-house-list-item">
+            <a href="./country/automatics/index.html" class="footer__country-house-link">Автоматика</a>
+          </li>
+          <li class="footer__country-house-list-item">
+            <a href="./country/water-supply/index.html" class="footer__country-house-link">Водоснабжение</a>
+          </li>
+          <li class="footer__country-house-list-item">
+            <a href="./country/water-disposal/index.html" class="footer__country-house-link">Водоотведение</a>
+          </li>
+          <li class="footer__country-house-list-item">
+            <a href="./country/warm-floors/index.html" class="footer__country-house-link">Тёпные полы</a>
+          </li>
+          <li class="footer__country-house-list-item">
+            <a href="./country/wells-pumps/index.html" class="footer__country-house-link">Обустройство скважин,
+              насосов</a>
+          </li>
+          <li class="footer__country-house-list-item">
+            <a href="./country/electrics/index.html" class="footer__country-house-link">Электрика</a>
+          </li>
+          <li class="footer__country-house-list-item">
+            <a href="./country/proecting/index.html" class="footer__country-house-link">Проектирование</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__commercial-space-container">
+        <h2 class="footer__commercial-space-title">Для коммерческих помещений</h2>
+        <ul class="footer__commercial-space-list footer__links-list">
+          <li class="footer__commercial-space-list-item">
+            <a href="./commercial/engineering/index.html" class="footer__commercial-space-link">Инженерные системы</a>
+          </li>
+          <li class="footer__commercial-space-list-item">
+            <a href="./commercial/heatvents/index.html" class="footer__commercial-space-link">Тепловентиляторы и
+              завесы</a>
+          </li>
+          <li class="footer__commercial-space-list-item">
+            <a href="./commercial/boilers/index.html" class="footer__commercial-space-link">Котельные</a>
+          </li>
+          <li class="footer__commercial-space-list-item">
+            <a href="./commercial/electrics/index.html" class="footer__commercial-space-link">Электромонтажные
+              работы</a>
+          </li>
+          <li class="footer__commercial-space-list-item">
+            <a href="./commercial/proecting/index.html" class="footer__commercial-space-link">Проектирование</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__companies">
+        <h2 class="footer__companies-title">Собственные компании</h2>
+        <ul class="footer__companies-list">
+          <li class="footer__companies-list-item">
+            <a href="#" class="footer__company">Приоритет</a>
+          </li>
+          <li class="footer__companies-list-item">
+            <a href="/sdf" class="footer__company">Магазин АиБ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__perms">© 2025 «Приоритет». Все права защищены.</p>
+    </div>
+  </footer>
+  <script src="./scripts/facts.js"></script>
+  <script src="./scripts/contact.js"></script>
+  <script src="./scripts/scheme.js"></script>
+  <script src="./scripts/top-links.js"></script>
+  <script src="./scripts/burger.js"></script>
 </body>
 
 </html>

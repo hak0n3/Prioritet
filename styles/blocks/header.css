@@ -171,6 +171,7 @@
 }
 
 .header__marquee span {
+
 	padding-left: 100%;
 
 	display: inline-block;
@@ -258,7 +259,7 @@
 	inline-size: 25vw;
 
 	position: fixed;
-	z-index: 999;
+	z-index: 9998;
 	left: -1000px;
 	opacity: 0;
 
@@ -300,7 +301,7 @@
 }
 
 .burger__links-list {
-	block-size: 50%;
+	block-size: 90%;
 
 	display: flex;
 	flex-direction: column;

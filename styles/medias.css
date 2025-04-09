@@ -415,6 +415,13 @@
 		transform: none;
 	}
 
+	.burger__links-list {
+		block-size: 70%;
+	}
+
+	.burger__contact-button {
+		block-size: 30%;
+	}
 }
 
 @media (width <= 400px) {

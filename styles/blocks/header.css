@@ -255,7 +255,7 @@
 /* Burger menu */
 
 .burger {
-	block-size: 100vh;
+	block-size: 100dvh;
 	inline-size: 25vw;
 
 	position: fixed;
@@ -301,7 +301,7 @@
 }
 
 .burger__links-list {
-	block-size: 90%;
+	block-size: 92.5%;
 
 	display: flex;
 	flex-direction: column;
@@ -324,7 +324,7 @@
 }
 
 .burger__links-list-item:not(.burger__link-btn) .burger__link {
-	color: var(--maif-color);
+	color: var(--main-color);
 }
 
 .burger__link {

@@ -34,7 +34,6 @@
 
 	background: #0000008c;
 	background: #DCDCDC;
-	border-bottom: 1px solid #00000048;
 }
 
 .header__burger-cont {
@@ -152,6 +151,25 @@
 .header__calling-image {
 	width: 25px;
 	height: 25px;
+}
+
+.header__marquee {
+	width: 100%;
+	height: 35px;
+
+	display: flex;
+	align-items: center;
+
+	position: absolute;
+	bottom: -35px;
+
+	background-color: var(--supporting-color);
+	border-top: 1px solid #00000048;
+	border-bottom: 1px solid #00000048;
+
+	color: #fff;
+	opacity: 0.9;
+	text-transform: uppercase;
 }
 
 /* Main part of header */
@@ -273,7 +291,7 @@
 }
 
 .burger__links-list {
-	block-size: 100%;
+	block-size: 95%;
 
 	display: flex;
 	flex-direction: column;

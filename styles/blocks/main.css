@@ -89,6 +89,13 @@
 	background: url('../../svg/mainSvgs/blue-stick.svg')
 }
 
+.burger__contact-button {
+	margin: 0;
+	margin-inline: auto;
+
+	block-size: 5%;
+}
+
 /* Projects */
 
 .main__projects {
